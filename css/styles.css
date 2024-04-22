@@ -1,1 +1,132 @@
+header {
+    background-color: rgb(80, 197, 252);
+  }
+  /* .bg {
+    background-color: rgb(197, 194, 194);
+    gap: 55px;
+  } */
+  .card_container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Keeps the cards in a single line */
+  }
  
+  .controls {
+    /* background-color: black; */
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    left: 0;
+    list-style: none;
+    /* margin: 0; */
+    /* padding: 0; */
+    position: absolute;
+    top: 50%;
+    /* transform: translatey(-50%); */
+    width: 100%;
+    padding: 10px 0;
+  }/* Basic modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Disable scroll */
+    background-color: rgba(255, 255, 255, 0.5); /* White w/ opacity */
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    z-index: 2;
+    align-content: center;
+    justify-content: center;
+  
+}
+
+/* Modal Content */
+.model-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Adjusted width */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Optional: adds shadow for better visibility */
+}
+@media (min-width: 768px) {
+    .model-content {
+        width: 70%; /* Slightly larger devices use a smaller percentage width */
+    }
+}
+
+@media (min-width: 1024px) {
+    .model-content {
+        width: 40%; /* Even larger devices */
+    }
+}
+/* The Close Button */
+.close {
+    display: block;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+close {
+    position: absolute; /* Position absolutely within the modal content */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Input and Button Styling */
+.input input,
+.button button {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.button button {
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: #0056b3;
+}
+
+/* Text Styling */
+ p {
+    text-align: center;
+    /* color: #333; */
+}
+.center-margin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%; /* You can set this to any width you want */
+}
+
+.error {
+    background-color: rgba(204, 74, 74 , 0.5);
+    border: 3px solid rgb(194, 23, 23);
+    color: red;
+}
