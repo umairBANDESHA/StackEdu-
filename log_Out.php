@@ -9,6 +9,7 @@ if (isset($_SESSION['role'])) {
 
     // Destroy the session
     session_destroy();
+
     
     // User is not logged in, redirect to login page
     header("Location: main.php");

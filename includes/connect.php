@@ -5,7 +5,6 @@ session_start();
 // names and email etc are from html file 
 $name = $_POST['name'];
 $password = $_POST['password'];
-//$role = $_POST['role'];
 
 require_once('db_connection.php');
 
@@ -14,8 +13,6 @@ if ($conn->connect_error) {
     echo "$conn->connect_error";
     die("Connection Failed : " . $conn->connect_error);
 } else {
-    // $session['imagePath'] = './icons/user.png';
-      
     // Query to retrieve user information
     // $adminQuery = "SELECT admin_Name , admin_Pass FROM admindata WHERE name = ?";
     // $stmt = $conn->prepare($adminQuery);
@@ -30,12 +27,14 @@ if ($conn->connect_error) {
         // Fetch user information, including the hashed password       
         $row = $result->fetch_assoc();
 
-        $stored_hashed_password = $row["password"]; // Replace 'hashed_password' with your actual database column name
-        $stored_role = $row["role"]; // Replace 'hashed_password' with your actual database column name
-        $stored_name = $row["name"]; // Replace 'hashed_password' with your actual database column name
+        $stored_hashed_password = $row["password"];
+        
+        $stored_role = $row["role"];
+        $stored_name = $row["name"]; 
 
         // Use $stored_hashed_password for verification during login
-        if (password_verify($password, $row['password'])) {
+        // if (password_verify($password, $row['password'])) {
+        if ($password == $row['password']) {
             // if ($stored_role == 'admin') {
             //     $_SESSION['role'] = 'admin'; // Replace with the actual user ID
 
@@ -56,22 +55,19 @@ if ($conn->connect_error) {
 
                 $_SESSION['role'] = 'user'; // Replace with the actual user ID
                 if($stored_name= 'Bandesha'){
-                    $session['imagePath'] = "../img/myself.jpg";
+                    $_SESSION['imagePath'] = "./img/myself.jpg";
                 }
-                $_SESSION['loginBtn'] = 'Log Out'; // Replace with the actual user ID
-
-
-
-
+            
 
                 header("Location: ../main.php");
             
         } else {
+            // USER name or PAss is wrong
             $_SESSION['login_failure'] = "Invalid user name or password";
 			header('Location: ../main.php');
-            $_SESSION['loginBtn'] = 'Log In'; 
-        }
+            }
     } else {
+        // if i dont get any thing from database
         $_SESSION['login_failure'] = "Invalid user name or password";
         // header('Location: sign_in_page.php');
     }

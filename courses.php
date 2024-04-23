@@ -1,6 +1,5 @@
  
 <?php
-include('./includes/header.php');
 // Set error reporting
 error_reporting(E_ALL & ~E_WARNING);
 
@@ -11,11 +10,12 @@ ini_set('display_errors', 'Off');
 session_start();
 
 
-
 if(!isset($session['role'])){
     header('Location: main.php'); 
 }
 
+
+include('./includes/header.php');
 ?>
 
 <h1>Courses Page</h1>

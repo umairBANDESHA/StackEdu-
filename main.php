@@ -10,9 +10,60 @@ ini_set('display_errors', 'Off');
 session_start();
 
 
+
 ?>
+    <div id="loginModal" class="modal page">
+     
+     <!-- LOgin design  -->
+     <div class="model-content container">
+       <span class="close">&times;</span>
+      <img src="./logo/8.png" alt="" class="center-margin" width="130px" height="85px">
+
+       <form action="./includes/connect.php" method="post">
+         <div <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>  class="input">
+           <input
+             type="text"
+             class="form-control"
+             placeholder="User Name"
+             name="name"
+             required
+           />
+           <span class="help-block <?php echo $username_err; ?>"></span>
+           <input
+             type="password"
+             class="form-control"
+             placeholder="Password"
+             name="password"
+             required?
+           />
+           <span class="help-block <?php echo $password_err; ?>"> </span>
+         </div>
+         <div>
+           <span class="error">
+             <?php
+                   echo $_SESSION['login_failure'];
+                   unset($_SESSION['login_failure']);
+                   ?>
+           </span>
+         </div>
+
+         <!--  -->
+         <div class="button">
+           <button class="btn btn-info btn-lg px-2">Log In</button>
+         </div>
+         <div>
+           <p>
+             Don't have an account
+             <a href="#">Sign Up</a>
+           </p>
+         </div>
+       </form>
+     </div>
+   </div>
+
+
   
-    <!--Hero Section  -->
+  <!--Hero Section  -->
     <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
@@ -301,7 +352,26 @@ session_start();
       </div>
     </div>
 
+
+
+
+
     <!-- FOOTER -->
 <?php
     include('./includes/footer.php');
 ?>
+
+<script>
+    window.onload = function() {
+        // Check if there's an error message and display it
+        <?php if (!empty($_SESSION['error'])): ?>
+        document.getElementById('loginModal').style.display = 'block'; // Show login div
+        // document.getElementById('errorDiv').style.display = 'block'; // Show error div
+        // document.getElementById('errorDiv').textContent = '<?php echo $_SESSION['error']; ?>';
+        // <?php
+            unset($_SESSION['error']); // Clear the error message for future page loads
+        endif;
+        ?>
+    };
+</script>
+

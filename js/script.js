@@ -31,3 +31,10 @@ window.addEventListener("click", function(event) {
         closeModal();
     }
 });
+
+
+    window.onload = function() {
+        // Check if there's an error message and display it
+       document.getElementById('loginDiv').style.display = 'block'; // Show login div
+    };
+

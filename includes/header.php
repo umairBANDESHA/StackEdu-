@@ -7,13 +7,28 @@ ini_set('display_errors', 'Off');
 
 session_start();
 
-if(!isset($session['imagePath'])){
-    $session['imagePath'] = "./icons/user.png"; 
+if(!isset($_SESSION['imagePath'])){
+    $_SESSION['imagePath'] = "./icons/user.png"; 
 }
-if(!isset( $_SESSION['loginBtn'])){
-    $session['loginBtn'] = "Log In"; 
+if(!isset( $_SESSION['role'])){
+  //for log in
+  $_SESSION['id'] = 'id="loginBtn"';
+  $_SESSION['dropdown'] ='';
+
+}
+if(isset( $_SESSION['role'])){
+  if(($_SESSION['role'] == 'user')){
+  $_SESSION['dropdown'] = 'data-bs-toggle="dropdown"'; 
+  $_SESSION['id'] = '';
+
+  }
 }
 
+if(!isset($_SESSION['login_failure'])){
+  echo "
+  DO SOMETHING HERE
+  ";
+}
 ?>
 
 <!DOCTYPE html>
@@ -99,25 +114,35 @@ if(!isset( $_SESSION['loginBtn'])){
             <a
               href="#"
               class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
-              data-bs-toggle="dropdown"
+              <?php
+              // this will work when the user is logged in
+              // it's for drop down functionality
+              echo $_SESSION['dropdown'] ;
+              ?>
               aria-expanded="false"
+            
+              <?php
+              // this will work when the user is logged out
+              // it's for sign in div
+              echo $_SESSION['id'] ;
+              ?>
             >
-            <?PHP echo '
+            
               <img
-                src="'. $session['imagePath'].'"
+                src="<?PHP echo $_SESSION['imagePath']; ?>"
                 alt="mdo"
                 width="32"
                 height="32"
                 class="rounded-circle border"
-              />';
-              ?>
+                />
+              
             </a>
             <ul class="dropdown-menu text-small">
               <li><a class="dropdown-item" href="#">Profile</a></li>
               <li><hr class="dropdown-divider" /></li>
               <li>
  
-                <a class="dropdown-item" href="#" id=loginBtn > Login</a>
+                <a class="dropdown-item" href="./log_Out.php"  > Log Out</a>
                 
               </li>
             </ul>
@@ -130,51 +155,11 @@ if(!isset( $_SESSION['loginBtn'])){
 
 
 <!-- LogIn -->
-<div id="loginModal" class="modal page">
-     
-     <!-- LOgin design  -->
-     <div class="model-content container">
-       <span class="close">&times;</span>
-      <img src="./logo/8.png" alt="" class="center-margin" width="130px" height="85px">
 
-       <form action="./includes/connect.php" method="post">
-         <div <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>  class="input">
-           <input
-             type="text"
-             class="form-control"
-             placeholder="User Name"
-             name="name"
-             required
-           />
-           <span class="help-block <?php echo $username_err; ?>"></span>
-           <input
-             type="password"
-             class="form-control"
-             placeholder="Password"
-             name="password"
-             required?
-           />
-           <span class="help-block <?php echo $password_err; ?>"> </span>
-         </div>
-         <div>
-           <span class="error">
-             <?php
-                   echo $_SESSION['login_failure'];
-                   unset($_SESSION['login_failure']);
-                   ?>
-           </span>
-         </div>
 
-         <!--  -->
-         <div class="button">
-           <button class="btn btn-info btn-lg px-2">Log In</button>
-         </div>
-         <div>
-           <p>
-             Don't have an account
-             <a href="#">Sign Up</a>
-           </p>
-         </div>
-       </form>
-     </div>
-   </div>
+
+
+
+
+
+

@@ -1,6 +1,14 @@
  
  
 <?php
+session_start();
+
+if(!isset($_SESSION['role'])){
+    header('Location: main.php'); 
+}
+
+
+
 include('./includes/header.php');
 // Set error reporting
 error_reporting(E_ALL & ~E_WARNING);
@@ -9,17 +17,16 @@ error_reporting(E_ALL & ~E_WARNING);
 ini_set('display_errors', 'Off');
 
 
-session_start();
 
-if(!isset($session['role'])){
-    header('Location: main.php'); 
-}
 
 
 ?>
 
 <h1>Roadmap Page</h1>
 <p>
+    <?php
+    echo $_SESSION['role'];
+    ?>
     This is the roadmaps page.
 </p>
 
