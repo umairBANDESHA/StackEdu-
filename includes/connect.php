@@ -34,7 +34,7 @@ if ($conn->connect_error) {
 
         // Use $stored_hashed_password for verification during login
         // if (password_verify($password, $row['password'])) {
-        if ($password == $row['password']) {
+        if (  password_verify($password, $row['password'])) {
             // if ($stored_role == 'admin') {
             //     $_SESSION['role'] = 'admin'; // Replace with the actual user ID
 
@@ -54,7 +54,7 @@ if ($conn->connect_error) {
             // } else {
 
                 $_SESSION['role'] = 'user'; // Replace with the actual user ID
-                if($stored_name= 'Bandesha'){
+                if($stored_name == 'Bandesha'){
                     $_SESSION['imagePath'] = "./img/myself.jpg";
                 }
             
@@ -67,9 +67,9 @@ if ($conn->connect_error) {
 			header('Location: ../main.php');
             }
     } else {
-        // if i dont get any thing from database
-        $_SESSION['login_failure'] = "Invalid user name or password";
-        // header('Location: sign_in_page.php');
+        // if i dont get any thing from database or there is no user of that name
+        $_SESSION['login_failure'] = "No User";
+        header('Location: ../main.php');
     }
 
 
@@ -78,13 +78,3 @@ if ($conn->connect_error) {
 $conn->close();
 $stmt->close();
 ?>
-
-<!-- QUERIES TO CREATE DATABASE & TABLE AND TO SAVE DEFAULT DATA -->
-
-<!-- 
-create database stackedu;
-
-create table logindetails( name varchar(200) not null, email varchar(200) not null, password varchar(200) not null ,  role varchar(200) not null);
-insert into logindetails(name , email , password ) values ( 'Bandesha' , 'umairbandesha40@gmail.com' , 1538);
-
- -->

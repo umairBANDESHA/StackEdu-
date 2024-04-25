@@ -1,3 +1,22 @@
+//Setting themes
+    const toggleSwitch = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme');
+    
+    if (currentTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        toggleSwitch.checked = true;
+    }
+    
+    toggleSwitch.addEventListener('change', () => {
+        if (toggleSwitch.checked) {
+            localStorage.setItem('theme', 'dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+            document.documentElement.removeAttribute('data-theme');
+        }
+    });
+
 // Get the modal element
 var modal = document.getElementById("loginModal");
 
@@ -33,8 +52,17 @@ window.addEventListener("click", function(event) {
 });
 
 
-    window.onload = function() {
-        // Check if there's an error message and display it
-       document.getElementById('loginDiv').style.display = 'block'; // Show login div
-    };
+//FOR IMAGE CHANGE 
+// document.getElementById('imageInput').addEventListener('change', function(event) {
+//     const file = event.target.files[0];
+//     if (file && file.type.match('image.*')) {
+//         const reader = new FileReader();
+//         reader.onload = function(e) {
+//             const imagePreview = document.getElementById('imagePreview');
+//             imagePreview.src = e.target.result;
+//         };
+//         reader.readAsDataURL(file);
+//     }
+// });
 
+   

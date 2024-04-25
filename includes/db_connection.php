@@ -14,3 +14,13 @@ if ($conn === false) {
 }
 ?>
  
+
+<!-- QUERIES TO CREATE DATABASE & TABLE AND TO SAVE DEFAULT DATA -->
+
+<!-- 
+create database stackedu;
+
+create table logindetails( name varchar(200) not null, email varchar(200) not null, password varchar(200) not null ,  role varchar(200) not null);
+insert into logindetails(name , email , password ) values ( 'Bandesha' , 'umairbandesha40@gmail.com' , 1538);
+
+ -->

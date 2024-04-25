@@ -12,6 +12,8 @@ session_start();
 
 
 ?>
+
+
     <div id="loginModal" class="modal page">
      
      <!-- LOgin design  -->
@@ -42,7 +44,7 @@ session_start();
            <span class="error">
              <?php
                    echo $_SESSION['login_failure'];
-                   unset($_SESSION['login_failure']);
+                  unset($_SESSION['login_failure']);
                    ?>
            </span>
          </div>
@@ -54,7 +56,7 @@ session_start();
          <div>
            <p>
              Don't have an account
-             <a href="#">Sign Up</a>
+             <a href="./sign_up_page.php">Sign Up</a>
            </p>
          </div>
        </form>
@@ -364,12 +366,11 @@ session_start();
 <script>
     window.onload = function() {
         // Check if there's an error message and display it
-        <?php if (!empty($_SESSION['error'])): ?>
+        <?php if (isset($_SESSION['login_failure'])): ?>
         document.getElementById('loginModal').style.display = 'block'; // Show login div
         // document.getElementById('errorDiv').style.display = 'block'; // Show error div
-        // document.getElementById('errorDiv').textContent = '<?php echo $_SESSION['error']; ?>';
         // <?php
-            unset($_SESSION['error']); // Clear the error message for future page loads
+            unset($_SESSION['login_failure']); // Clear the error message for future page loads
         endif;
         ?>
     };

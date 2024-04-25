@@ -1,3 +1,45 @@
+/* Light theme (default) */
+:root {
+    --background-color: #FFFFFF;
+    --text-color: #333333;
+    --header-color: #F1F1F1;
+    --border-color: #DDDDDD;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #E1E1E1;
+    --header-color: #333333;
+    --border-color: #222222;
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--header-color);
+}
+
+hr {
+    border-color: var(--border-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THeme settings */
 header {
     background-color: rgb(80, 197, 252);
   }
@@ -98,6 +140,15 @@ close {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#imageInput,
+input[type ='file']{
+    width: 70px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(12, 0, 0);
     border-radius: 5px;
     box-sizing: border-box;
 }
