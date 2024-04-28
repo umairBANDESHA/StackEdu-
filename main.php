@@ -13,11 +13,11 @@ session_start();
 
 ?>
 
-
+<!-- SIGN IN DIV -->
     <div id="loginModal" class="modal page">
      
      <!-- LOgin design  -->
-     <div class="model-content container">
+     <div class="modal-content container">
        <span class="close">&times;</span>
       <img src="./logo/8.png" alt="" class="center-margin" width="130px" height="85px">
 
@@ -63,6 +63,7 @@ session_start();
      </div>
    </div>
 
+<!-- PROFILE VIEW -->
 
   
   <!--Hero Section  -->

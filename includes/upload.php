@@ -1,53 +1,50 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
-    $targetDirectory = "../img/users/";
+session_start();
+if (isset($_POST['submit'])) {
+    $targetDirectory = "./img/users/";  // Ensure this directory exists and is writable
     $targetFile = $targetDirectory . basename($_FILES["image"]["name"]);
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
 
-    // Check if the file is an actual image
-    $check = getimagesize($_FILES["image"]["tmp_name"]);
-    if ($check === false) {
-        $_SESSION['ERROR'] = 'File is not an image.';
-        header('Location: ./adminDashboard.php');
-        $uploadOk = 0;
+    // Check if image file is an actual image or fake image
+    if(isset($_POST["submit"])) {
+        $check = getimagesize($_FILES["image"]["tmp_name"]);
+        if($check == false) {
+            echo "File is not an image.";
+            $uploadOk = 0;
+        }
     }
 
     // Check if file already exists
     if (file_exists($targetFile)) {
-        $_SESSION['ERROR'] = 'Sorry, file already exists.';
-        header('Location: ./adminDashboard.php');
+        echo "Sorry, file already exists.";
         $uploadOk = 0;
     }
 
-    // Check file size (adjust as needed)
-    if ($_FILES["image"]["size"] > 1000000) {
-        $_SESSION['ERROR'] = 'Sorry, your file is too large.';
-        header('Location: ./adminDashboard.php');
+    // Check file size
+    if ($_FILES["image"]["size"] > 500000) {  // 500 KB limit
+        echo "Sorry, your file is too large.";
         $uploadOk = 0;
     }
 
     // Allow certain file formats
-    $allowedFormats = ["jpg", "jpeg", "png", "gif"];
-    if (!in_array($imageFileType, $allowedFormats)) {
-        $_SESSION['ERROR'] = 'Sorry, only JPG, JPEG, PNG, and GIF files are allowed.';
-        header('Location: ./adminDashboard.php');
+    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
+        echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
         $uploadOk = 0;
     }
 
     // Check if $uploadOk is set to 0 by an error
     if ($uploadOk == 0) {
-        $_SESSION['ERROR'] = 'Sorry, your file was not uploaded.';
-        header('Location: ./adminDashboard.php');
-       
+        echo "Sorry, your file was not uploaded.";
+    // If everything is ok, try to upload file
     } else {
-        // If everything is ok, move the file to the target directory
         if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile)) {
-           header('Location: ./adminDashboard.php');
-           $_SESSION['ERROR'] = 'File Upload Successfully.';
-        } else {
-            $_SESSION['ERROR'] = 'ERROR in uploading.';
+            $_SESSION['login_failure']  = "The pic has been uploaded.";
+
+            // Include the database configuration file (make sure to adjust parameters as needed)
+        }else{
+            echo "Sorry, there was an error uploading your file.";
         }
     }
 }
-?>
+    ?>

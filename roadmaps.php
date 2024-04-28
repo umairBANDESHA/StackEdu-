@@ -24,9 +24,7 @@ ini_set('display_errors', 'Off');
 
 <h1>Roadmap Page</h1>
 <p>
-    <?php
-    echo $_SESSION['role'];
-    ?>
+   
     This is the roadmaps page.
 </p>
 

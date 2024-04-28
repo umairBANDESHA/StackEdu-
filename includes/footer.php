@@ -35,7 +35,7 @@
     </div>
 
     <!-- Script -->
-    <script src="./JS/script.js"></script>
+    <script src="./js/script.js"></script>
     <script
       src="https://kit.fontawesome.com/d15eb2b108.js"
       crossorigin="anonymous"

@@ -65,4 +65,6 @@ window.addEventListener("click", function(event) {
 //     }
 // });
 
-   
+//    FOR USER Details 
+
+

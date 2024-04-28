@@ -111,7 +111,7 @@ if (isset($_SESSION['role'])) {
 
           </a>
           <ul class="dropdown-menu text-small">
-            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#" id="showDetailsBtn" >Profile</a></li>
             <li> 
               <label class="switch dropdown-item">
                 <input type="checkbox" id="theme-toggle" >
@@ -135,4 +135,20 @@ if (isset($_SESSION['role'])) {
 
 
 
-  <!-- LogIn -->
+  <!-- PROFILE VIEW -->
+
+
+<div id="userDetails" class="userModel" style="display: none;">
+        <div class="userModel-content">
+            <span class="clase">&times;</span>
+            <img src="<?PHP echo $_SESSION['imagePath']; ?>" alt="mdo" width="92" height="92"
+              class="rounded-circle border" />
+            <h2>User Details</h2>
+            <p>Name: <?php echo htmlspecialchars($user['name']); ?></p>
+            <p>Email: <?php echo htmlspecialchars($user['email']); ?></p>
+            <p>Address: <?php echo htmlspecialchars($user['address']); ?></p>
+            <p>Phone Number: <?php echo htmlspecialchars($user['phoneNbr']); ?></p>
+        </div>
+    </div>
+
+   

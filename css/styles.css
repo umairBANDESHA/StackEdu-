@@ -80,7 +80,6 @@ header {
     overflow: hidden; /* Disable scroll */
     background-color: rgba(255, 255, 255, 0.5); /* White w/ opacity */
     backdrop-filter: blur(4.5px);
-    -webkit-backdrop-filter: blur(4.5px);
     z-index: 2;
     align-content: center;
     justify-content: center;
@@ -88,7 +87,7 @@ header {
 }
 
 /* Modal Content */
-.model-content {
+.modal-content {
     background-color: #fefefe;
     padding: 20px;
     border: 5px solid #fff;
@@ -145,7 +144,7 @@ close {
 }
 #imageInput,
 input[type ='file']{
-    width: 70px;
+    width: 230px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid rgb(12, 0, 0);
@@ -180,4 +179,81 @@ input[type ='file']{
     background-color: rgba(204, 74, 74 , 0.5);
     border: 3px solid rgb(194, 23, 23);
     color: red;
+}
+
+
+/* Contact Form Styles */
+.contact-form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+@media (min-width: 768px) {
+    .contact-form {
+        width: 60%; /* Slightly larger devices use a smaller percentage width */
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-form {
+        width: 40%; /* Even larger devices */
+    }
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    margin: 12.5px;
+    width: 95%;
+    box-sizing: border-box;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+
+    font-size: larger;
+}
+
+.contact-form input {
+    border-bottom: 2px solid #333;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 80px;
+    padding: 10px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    /* Adjust the font size */
+    font-weight: bold;
+    color: #333;
+    /* Set the desired text color */
+    margin-bottom: 20px;
+    /* Add margin for spacing */
+    text-align: center;
+    /* Center the heading */
 }

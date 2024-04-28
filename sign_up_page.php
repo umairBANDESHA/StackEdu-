@@ -1,3 +1,13 @@
+<?php
+session_start();
+// Set error reporting
+error_reporting(E_ALL & ~E_WARNING);
+
+// Set display_errors
+ini_set('display_errors', 'Off');
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +29,7 @@
     <div class="page">
         <div class="container">
             <h1> <img src="./logo/8.png" alt="" class="center-margin" width="130px" height="85px">
-</h1>
+            </h1>
 
             <form action="./includes/sign_up.php" method="post">
                 <div class="input">
@@ -28,9 +38,15 @@
                     <input type="number" class="form-control" placeholder="0300********" name="phoneNmbr" required>
                     <input type="text" class="form-control" placeholder="Abc city" name="address" required>
                     <input type="password" class="form-control" placeholder="Password" name="password" required?>
-                    <input type="file" class="form-control"  id='imageInput' name="picture" accept="image/*" required>
+               </div>
+                <div>
+                    <span class="error">
+                        <?php
+                        echo $_SESSION['login_failure'];
+                        unset($_SESSION['login_failure']);
+                        ?>
+                    </span>
                 </div>
-                
                 <div class="button">
                     <button class="btn btn-info btn-lg px-2">Log In</button>
                 </div>
