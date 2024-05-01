@@ -127,15 +127,16 @@
             "description": "The application’s in-built instance of router. This is created lazily, on first access, and you can add middleware and HTTP method routes to the router just like an application.",
             "code": "const express = require('express')\nconst app = express()\nconst router = app.router\n\nrouter.get('/', (req, res) => {\n  res.send('hello world')\n})\n\napp.listen(3000)"
           }
-        },"routerObjects": {
+        },
+        "routerObjects": {
             "title": "Router Objects",
             "description": "You can group routes together using routers which can be used for organization and to apply middleware to a specific group of routes.",
             "creatingRouter": {
               "description": "Create a Router object and register it with the application for routes with a certain prefix.",
               "code": "const router = express.Router();\napp.use('/prefix', router);\nrouter.use(middlewareFunction);\nrouter.get('/endpoint', routerHandler); // URL is /prefix/endpoint"
             }
-          },
-          "connectingToDatabases": {
+        },
+        "connectingToDatabases": {
             "title": "Connecting to Databases",
             "description": "The following libraries can help you connect to different databases:",
             "libraries": [
@@ -160,8 +161,8 @@
                 "link": "https://waterlinejs.org/"
               }
             ]
-          },
-          "makingApiCalls": {
+        },
+        "makingApiCalls": {
             "title": "Making API Calls",
             "description": "While you can't use fetch natively in Node, and jQuery is only a frontend library, you have some alternatives for making API calls.",
             "options": [
@@ -1026,6 +1027,7 @@
 
 
     },
+
     "reactJS":{
 
     },

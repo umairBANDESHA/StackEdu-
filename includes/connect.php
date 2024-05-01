@@ -16,7 +16,7 @@ if ($conn->connect_error) {
     // Query to retrieve user information
     // $adminQuery = "SELECT admin_Name , admin_Pass FROM admindata WHERE name = ?";
     // $stmt = $conn->prepare($adminQuery);
-    $userQuery = "SELECT name, email, address, phoneNbr  FROM logindetails WHERE name = ?";
+    $userQuery = "SELECT name, password  FROM logindetails WHERE name = ?";
     $stmt = $conn->prepare($userQuery);
 
     $stmt->bind_param("s", $name);
@@ -53,13 +53,17 @@ if ($conn->connect_error) {
 
             // } else {
 
-                $_SESSION['role'] = $name; // Replace with the actual user ID
+                $_SESSION['role'] = 'user'; // Replace with the actual user ID
                 if($stored_name == 'Bandesha'){
+                    // $_SESSION['role'] = 'admin'; // Replace with the actual user ID
+
                     $_SESSION['imagePath'] = "./img/myself.jpg";
+                    header('Location: ../Admin\adminDashboard.php');
+                }else{
+                    header("Location: ../main.php");
                 }
             
 
-                header("Location: ../main.php");
             
         } else {
             // USER name or PAss is wrong

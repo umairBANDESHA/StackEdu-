@@ -257,3 +257,7 @@ input:focus {
     text-align: center;
     /* Center the heading */
 }
+.ref{
+    color: #0056b3;
+    text-decoration: none;
+}

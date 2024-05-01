@@ -1,0 +1,593 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="-671 -20 1422 1883" style="font-family: balsamiq" version="1.1">
+    <path d="M0,70 C0,135 0,135 0,200" fill="none" stroke="#2b78e4" stroke-width="3.5"
+        data-edge-id="9ur4JigtmzuPDFuLCNa1o" stroke-linecap="round" stroke-linejoin="round"
+        stroke-dasharray="0"></path>
+    <path d="M-126.3828125,226.75 C-183.8828125,226.75 -183.8828125,226.75 -241.3828125,226.75"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="ooa6BFbAzPmaZkOUm1Ptp"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M126.3828125,226.75 C183.8828125,226.75 183.8828125,226.75 241.3828125,226.75"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="MBG9PvH0upzeqAkGnk-R-"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M-126.3828125,226.75 C-183.8828125,226.75 -183.8828125,283.75 -241.3828125,283.75"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="o7hMldBKmBA-KXFhqXsl7"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M126.3828125,226.75 C183.8828125,226.75 183.8828125,283.75 241.3828125,283.75"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="PaxbD8pZz57p-90E0ovTl"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M0,253.5 C0,319.5 0,319.5 0,385.5" fill="none" stroke="#2b78e4" stroke-width="3.5"
+        data-edge-id="O0Hdy71cGHS-axGdePQCG" stroke-linecap="round" stroke-linejoin="round"
+        stroke-dasharray="0"></path>
+    <path d="M-99.2421875,412.25 C-156.7421875,412.25 -156.7421875,412.25 -214.2421875,412.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="7_GJB5HdJCQe53cUulJB5"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M99.2421875,412.25 C156.7421875,412.25 156.7421875,412.25 214.2421875,412.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="yYFJk_jTYNL9o4oyhrETR"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M-99.2421875,412.25 C-156.7421875,412.25 -156.7421875,469.25 -214.2421875,469.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="aUaWoLtjPbrEYOLTzDL9r"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M99.2421875,412.25 C156.7421875,412.25 156.7421875,469.25 214.2421875,469.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="CKojqY3gOYGg1mlxRVTE0"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M-99.2421875,412.25 C-156.7421875,412.25 -156.7421875,526.25 -214.2421875,526.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="u-aAUbdYCy5ecsVqWmqSX"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M99.2421875,412.25 C156.7421875,412.25 156.7421875,526.25 214.2421875,526.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="zlW_uZjwc_Mt5QhPR7g8R"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M0,439 C0,531.75 0,531.75 0,624.5" fill="none" stroke="#2b78e4" stroke-width="3.5"
+        data-edge-id="wMJ8MEUSboeMdCstHJ39V" stroke-linecap="round" stroke-linejoin="round"
+        stroke-dasharray="0"></path>
+    <path d="M-89.0703125,651.25 C-146.5703125,651.25 -146.5703125,651.25 -204.0703125,651.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="H9h1kj0bU9WWdA0Lo-ke2"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M89.0703125,651.25 C146.5703125,651.25 146.5703125,651.25 204.0703125,651.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="LnfjGWSqxPsNIyIPSEFw9"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M-89.0703125,651.25 C-146.5703125,651.25 -146.5703125,708.25 -204.0703125,708.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="qLgBqnPB_1_YR-IUH4tm7"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M89.0703125,651.25 C146.5703125,651.25 146.5703125,708.25 204.0703125,708.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="PTudxOXTtaG-xEZ3PIoT0"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M-89.0703125,651.25 C-146.5703125,651.25 -146.5703125,765.25 -204.0703125,765.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="pULu4mB0aqNAaP7GfMq8o"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M89.0703125,651.25 C146.5703125,651.25 146.5703125,765.25 204.0703125,765.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="dAqJ1MPfi5krEOWe9PCSI"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M0,678 C0,770.75 0,770.75 0,863.5" fill="none" stroke="#2b78e4" stroke-width="3.5"
+        data-edge-id="IZp3wi0wbdGN01N1vxUBx" stroke-linecap="round" stroke-linejoin="round"
+        stroke-dasharray="0"></path>
+    <path d="M-105.6015625,890.25 C-163.1015625,890.25 -163.1015625,890.25 -220.6015625,890.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="AMRz_LGADlEHHGRTPxS8k"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M105.6015625,890.25 C163.1015625,890.25 163.1015625,890.25 220.6015625,890.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="QyTqdb3v0yJMjvPs5K3ok"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M-105.6015625,890.25 C-163.1015625,890.25 -163.1015625,947.25 -220.6015625,947.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="NQbgV5IyxXpiNg8TRF-1j"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M105.6015625,890.25 C163.1015625,890.25 163.1015625,947.25 220.6015625,947.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="0Nl3DP7brXcfWhQl2WXox"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M-105.6015625,890.25 C-163.1015625,890.25 -163.1015625,1004.25 -220.6015625,1004.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="linFd1eil6p_0uAsHj3g0"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M105.6015625,890.25 C163.1015625,890.25 163.1015625,1004.25 220.6015625,1004.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="vgGf_3_j7Di3w2GpVBtkF"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M0,917 C0,1009.75 0,1009.75 0,1102.5" fill="none" stroke="#2b78e4" stroke-width="3.5"
+        data-edge-id="vKrIDneSx7dT2AtKtVajF" stroke-linecap="round" stroke-linejoin="round"
+        stroke-dasharray="0"></path>
+    <path d="M-84.171875,1129.25 C-141.671875,1129.25 -141.671875,1129.25 -199.171875,1129.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="5UFkjyZXV-FJ6qSssPJUB"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M84.171875,1129.25 C141.671875,1129.25 141.671875,1129.25 199.171875,1129.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="g264d8qhSnho0SOJT6efT"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M-84.171875,1129.25 C-141.671875,1129.25 -141.671875,1186.25 -199.171875,1186.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="2hT59M5w8_UlBIO9mcq83"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M84.171875,1129.25 C141.671875,1129.25 141.671875,1186.25 199.171875,1186.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="gISLzoCkttRsSYmvRkbOt"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M-84.171875,1129.25 C-141.671875,1129.25 -141.671875,1243.25 -199.171875,1243.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="LQ1puXV7g4J3LbxPoBn5b"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M84.171875,1129.25 C141.671875,1129.25 141.671875,1243.25 199.171875,1243.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="fs6vGNYyfeBgWN8d9g4rJ"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M0,1156 C0,1248.75 0,1248.75 0,1341.5" fill="none" stroke="#2b78e4" stroke-width="3.5"
+        data-edge-id="BOq-zpDHzb1wJRWtquBQT" stroke-linecap="round" stroke-linejoin="round"
+        stroke-dasharray="0"></path>
+    <path d="M-78.546875,1368.25 C-136.046875,1368.25 -136.046875,1368.25 -193.546875,1368.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="O4YCoryy_D-j0dc2TzZF2"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M78.546875,1368.25 C136.046875,1368.25 136.046875,1368.25 193.546875,1368.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="iJ-rSh3F_T4bKNiZwgpFG"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M-78.546875,1368.25 C-136.046875,1368.25 -136.046875,1425.25 -193.546875,1425.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="yiGkFIGoumNMGDvEL3bJL"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M78.546875,1368.25 C136.046875,1368.25 136.046875,1425.25 193.546875,1425.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="SaKtLYh3BSt1JLgQt266-"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M-78.546875,1368.25 C-136.046875,1368.25 -136.046875,1482.25 -193.546875,1482.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="khL0ZvmDjCyG_Td-66SvD"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M0,1395 C0,1487.75 0,1487.75 0,1580.5" fill="none" stroke="#2b78e4" stroke-width="3.5"
+        data-edge-id="ZRpo39teZBQfB3i3w6PRV" stroke-linecap="round" stroke-linejoin="round"
+        stroke-dasharray="0"></path>
+    <path d="M-101.1328125,1607.25 C-158.6328125,1607.25 -158.6328125,1607.25 -216.1328125,1607.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="0B3k9BJBNcYxmy3vxUaW1"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M101.1328125,1607.25 C158.6328125,1607.25 158.6328125,1607.25 216.1328125,1607.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="vgR064niMt0oDPjvKERNK"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M-101.1328125,1607.25 C-158.6328125,1607.25 -158.6328125,1664.25 -216.1328125,1664.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="KKL4PXwSJvzT2tR2Zu4ZV"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M101.1328125,1607.25 C158.6328125,1607.25 158.6328125,1664.25 216.1328125,1664.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="BnahHKmQRB0GzEclXItWW"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M-101.1328125,1607.25 C-158.6328125,1607.25 -158.6328125,1721.25 -216.1328125,1721.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="cVw8ArBzpfjHO93ldGSje"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+    <path d="M101.1328125,1607.25 C158.6328125,1607.25 158.6328125,1721.25 216.1328125,1721.25"
+        fill="none" stroke="#2b78e4" stroke-width="3.5" data-edge-id="zk7xOXdFPwuSr9EaSKb7k"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+   
+    
+    <g data-node-id="KxBir-A_xo1nde9lrFzl_" data-type="title" data-title="VERN Stack Development">
+        <text x="0" y="35" text-anchor="middle" dominant-baseline="middle" font-size="28"
+            fill="black">
+            <tspan>VERN Stack Development</tspan>
+        </text>
+    </g>
+    <g data-node-id="k18m7r5XFPZeE_PmJXPcM" data-type="subtopic" data-title="Introduction to Vue.js"
+        data-parent-id="XlOb8rK-UUU6of68H0644" data-parent-title="Introduction to VERN Stack">
+        <rect x="-444.0796875" y="201.35" width="201.346875" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-343.40625" y="226.75" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Introduction to Vue.js</tspan>
+        </text>
+    </g>
+    <g data-node-id="8SpRcrqaZtM04EsM20KqF" data-type="subtopic"
+        data-title="Role of Redis in VERN Stack" data-parent-id="XlOb8rK-UUU6of68H0644"
+        data-parent-title="Introduction to VERN Stack">
+        <rect x="242.7328125" y="201.35" width="260.51875" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="372.9921875" y="226.75" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Role of Redis in VERN Stack</tspan>
+        </text>
+    </g>
+    <g data-node-id="648EuTtDGIjvHDPFbvX6s" data-type="subtopic"
+        data-title="Understanding Express.js" data-parent-id="XlOb8rK-UUU6of68H0644"
+        data-parent-title="Introduction to VERN Stack">
+        <rect x="-479.9078125" y="258.35" width="237.175" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-361.3203125" y="283.75" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Understanding Express.js</tspan>
+        </text>
+    </g>
+    <g data-node-id="E0LdD8IbdWihc46I4x7MH" data-type="subtopic" data-title="Basics of Node.js"
+        data-parent-id="XlOb8rK-UUU6of68H0644" data-parent-title="Introduction to VERN Stack">
+        <rect x="242.7328125" y="258.35" width="173.815625" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="329.640625" y="283.75" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Basics of Node.js</tspan>
+        </text>
+    </g>
+    <g data-node-id="XlOb8rK-UUU6of68H0644" data-type="topic"
+        data-title="Introduction to VERN Stack" data-parent-id="KxBir-A_xo1nde9lrFzl_"
+        data-parent-title="VERN Stack Development">
+        <rect x="-125.0328125" y="201.35" width="250.065625" height="50.8" rx="5" fill="#fdff00"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="0" y="226.75" text-anchor="middle" dominant-baseline="middle" font-size="17"
+            fill="black">
+            <tspan>Introduction to VERN Stack</tspan>
+        </text>
+    </g>
+    <g data-node-id="d5hApWWIyjF-6Aej_QSV9" data-type="subtopic"
+        data-title="Understanding JavaScript Syntax" data-parent-id="DD0b0qNcM_JqGGsIiqpGQ"
+        data-parent-title="Basics of JavaScript">
+        <rect x="-509.0484375" y="386.85" width="293.45625" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-362.3203125" y="412.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Understanding JavaScript Syntax</tspan>
+        </text>
+    </g>
+    <g data-node-id="ksQ6ZrGbmnL7G0GEdGfdE" data-type="subtopic" data-title="DOM Manipulation"
+        data-parent-id="DD0b0qNcM_JqGGsIiqpGQ" data-parent-title="Basics of JavaScript">
+        <rect x="215.5921875" y="386.85" width="184.675" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="307.9296875" y="412.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>DOM Manipulation</tspan>
+        </text>
+    </g>
+    <g data-node-id="4EAKzp2_80QlvH7VbSkWL" data-type="subtopic"
+        data-title="Asynchronous programming in JavaScript" data-parent-id="DD0b0qNcM_JqGGsIiqpGQ"
+        data-parent-title="Basics of JavaScript">
+        <rect x="-572.2203125" y="443.85" width="356.628125" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-393.90625" y="469.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Asynchronous programming in JavaScript</tspan>
+        </text>
+    </g>
+    <g data-node-id="Kx5x0jhpQKgQjQqqBZfbl" data-type="subtopic"
+        data-title="Event Handling in JavaScript" data-parent-id="DD0b0qNcM_JqGGsIiqpGQ"
+        data-parent-title="Basics of JavaScript">
+        <rect x="215.5921875" y="443.85" width="260.596875" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="345.890625" y="469.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Event Handling in JavaScript</tspan>
+        </text>
+    </g>
+    <g data-node-id="_TfT5GHjka3bg3xLR7iuP" data-type="subtopic"
+        data-title="JavaScript ES6 Syntax and Beyond" data-parent-id="DD0b0qNcM_JqGGsIiqpGQ"
+        data-parent-title="Basics of JavaScript">
+        <rect x="-523.9390625" y="500.85" width="308.346875" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-369.765625" y="526.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>JavaScript ES6 Syntax and Beyond</tspan>
+        </text>
+    </g>
+    <g data-node-id="m0eV8TFTxsDwPWOuwdxnA" data-type="subtopic"
+        data-title="JavaScript Object-Oriented Programming" data-parent-id="DD0b0qNcM_JqGGsIiqpGQ"
+        data-parent-title="Basics of JavaScript">
+        <rect x="215.5921875" y="500.85" width="358.003125" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="394.59375" y="526.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>JavaScript Object-Oriented Programming</tspan>
+        </text>
+    </g>
+    <g data-node-id="DD0b0qNcM_JqGGsIiqpGQ" data-type="topic" data-title="Basics of JavaScript"
+        data-parent-id="XlOb8rK-UUU6of68H0644" data-parent-title="Introduction to VERN Stack">
+        <rect x="-97.8921875" y="386.85" width="195.784375" height="50.8" rx="5" fill="#fdff00"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="0" y="412.25" text-anchor="middle" dominant-baseline="middle" font-size="17"
+            fill="black">
+            <tspan>Basics of JavaScript</tspan>
+        </text>
+    </g>
+    <g data-node-id="JI0fFZyMV5T5_zn1jv2IS" data-type="subtopic"
+        data-title="Understanding Vue.js Structure" data-parent-id="lCu7uxb_FKtiNrr4a9iJw"
+        data-parent-title="Vue.js Framework">
+        <rect x="-483.7359375" y="625.85" width="278.315625" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-344.578125" y="651.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Understanding Vue.js Structure</tspan>
+        </text>
+    </g>
+    <g data-node-id="VbxbtrBffzIIWt_WuPcBJ" data-type="subtopic"
+        data-title="State Management with Vuex" data-parent-id="lCu7uxb_FKtiNrr4a9iJw"
+        data-parent-title="Vue.js Framework">
+        <rect x="205.4203125" y="625.85" width="264.096875" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="337.46875" y="651.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>State Management with Vuex</tspan>
+        </text>
+    </g>
+    <g data-node-id="rTWRACqd3LJ3k8QciKtFb" data-type="subtopic"
+        data-title="Developing Components in Vue.js" data-parent-id="lCu7uxb_FKtiNrr4a9iJw"
+        data-parent-title="Vue.js Framework">
+        <rect x="-502.9703125" y="682.85" width="297.55" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-354.1953125" y="708.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Developing Components in Vue.js</tspan>
+        </text>
+    </g>
+    <g data-node-id="vL_NysjtwspE2OzVE-65W" data-type="subtopic"
+        data-title="Server-Side Rendering in Vue.js" data-parent-id="lCu7uxb_FKtiNrr4a9iJw"
+        data-parent-title="Vue.js Framework">
+        <rect x="205.4203125" y="682.85" width="284.159375" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="347.5" y="708.25" text-anchor="middle" dominant-baseline="middle" font-size="17"
+            fill="black">
+            <tspan>Server-Side Rendering in Vue.js</tspan>
+        </text>
+    </g>
+    <g data-node-id="ZnviR3pcZtgip-HkNp5Il" data-type="subtopic" data-title="Vue.js Routing"
+        data-parent-id="lCu7uxb_FKtiNrr4a9iJw" data-parent-title="Vue.js Framework">
+        <rect x="-355.5640625" y="739.85" width="150.14375" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-280.4921875" y="765.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Vue.js Routing</tspan>
+        </text>
+    </g>
+    <g data-node-id="eriF2ZT9wrq9bPuNupmV1" data-type="subtopic" data-title="Unit Testing in Vue.js"
+        data-parent-id="lCu7uxb_FKtiNrr4a9iJw" data-parent-title="Vue.js Framework">
+        <rect x="205.4203125" y="739.85" width="198.815625" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="304.828125" y="765.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Unit Testing in Vue.js</tspan>
+        </text>
+    </g>
+    <g data-node-id="lCu7uxb_FKtiNrr4a9iJw" data-type="topic" data-title="Vue.js Framework"
+        data-parent-id="DD0b0qNcM_JqGGsIiqpGQ" data-parent-title="Basics of JavaScript">
+        <rect x="-87.7203125" y="625.85" width="175.440625" height="50.8" rx="5" fill="#fdff00"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="0" y="651.25" text-anchor="middle" dominant-baseline="middle" font-size="17"
+            fill="black">
+            <tspan>Vue.js Framework</tspan>
+        </text>
+    </g>
+    <g data-node-id="e9M6B7E8DZgsLdv54xqcT" data-type="subtopic"
+        data-title="Understanding Express.js Structure" data-parent-id="Pn1Mp-6A6_120GszONO2U"
+        data-parent-title="Express.js Framework">
+        <rect x="-533.8453125" y="864.85" width="311.89375" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-377.8984375" y="890.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Understanding Express.js Structure</tspan>
+        </text>
+    </g>
+    <g data-node-id="4PkFIQ8we_OXEG_K_oKEE" data-type="subtopic" data-title="Error Handling"
+        data-parent-id="Pn1Mp-6A6_120GszONO2U" data-parent-title="Express.js Framework">
+        <rect x="221.9515625" y="864.85" width="153.378125" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="298.640625" y="890.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Error Handling</tspan>
+        </text>
+    </g>
+    <g data-node-id="tKHAJD9Xtykn0TMbSsudF" data-type="subtopic" data-title="Basic Routing"
+        data-parent-id="Pn1Mp-6A6_120GszONO2U" data-parent-title="Express.js Framework">
+        <rect x="-370.3609375" y="921.85" width="148.409375" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-296.15625" y="947.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Basic Routing</tspan>
+        </text>
+    </g>
+    <g data-node-id="ObXmRjlXNNA-49y0msu1m" data-type="subtopic" data-title="Jinja2 Templating"
+        data-parent-id="Pn1Mp-6A6_120GszONO2U" data-parent-title="Express.js Framework">
+        <rect x="221.9515625" y="921.85" width="176.159375" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="310.03125" y="947.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Jinja2 Templating</tspan>
+        </text>
+    </g>
+    <g data-node-id="f8p0Pl8SM_aVVrNJ3jmyN" data-type="subtopic" data-title="Middleware"
+        data-parent-id="Pn1Mp-6A6_120GszONO2U" data-parent-title="Express.js Framework">
+        <rect x="-351.9390625" y="978.85" width="129.9875" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-286.9453125" y="1004.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Middleware</tspan>
+        </text>
+    </g>
+    <g data-node-id="cfs2skEjGajh-hjelaCJ_" data-type="subtopic"
+        data-title="REST APIs with Express.js" data-parent-id="Pn1Mp-6A6_120GszONO2U"
+        data-parent-title="Express.js Framework">
+        <rect x="221.9515625" y="978.85" width="240.83125" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="342.3671875" y="1004.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>REST APIs with Express.js</tspan>
+        </text>
+    </g>
+    <g data-node-id="Pn1Mp-6A6_120GszONO2U" data-type="topic" data-title="Express.js Framework"
+        data-parent-id="lCu7uxb_FKtiNrr4a9iJw" data-parent-title="Vue.js Framework">
+        <rect x="-104.2515625" y="864.85" width="208.503125" height="50.8" rx="5" fill="#fdff00"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="0" y="890.25" text-anchor="middle" dominant-baseline="middle" font-size="17"
+            fill="black">
+            <tspan>Express.js Framework</tspan>
+        </text>
+    </g>
+    <g data-node-id="Hlpr_85GL6yw8ba4YNew6" data-type="subtopic"
+        data-title="Understanding Redis Data Structure" data-parent-id="TvFrieWUpgRrIRJ0DH7z7"
+        data-parent-title="Redis Datastore">
+        <rect x="-520.259375" y="1103.85" width="319.7375" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-360.390625" y="1129.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Understanding Redis Data Structure</tspan>
+        </text>
+    </g>
+    <g data-node-id="H_D40Onn29Ms2MecIJPvk" data-type="subtopic" data-title="Redis Pub/Sub"
+        data-parent-id="TvFrieWUpgRrIRJ0DH7z7" data-parent-title="Redis Datastore">
+        <rect x="200.521875" y="1103.85" width="156.940625" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="278.9921875" y="1129.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Redis Pub/Sub</tspan>
+        </text>
+    </g>
+    <g data-node-id="sz3c0WAj64k32VnCsNpzN" data-type="subtopic" data-title="Redis CLI"
+        data-parent-id="TvFrieWUpgRrIRJ0DH7z7" data-parent-title="Redis Datastore">
+        <rect x="-317.853125" y="1160.85" width="117.33125" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-259.1875" y="1186.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Redis CLI</tspan>
+        </text>
+    </g>
+    <g data-node-id="TsDrOkCRU4cr5aw2lsHya" data-type="subtopic" data-title="Redis Persistence"
+        data-parent-id="TvFrieWUpgRrIRJ0DH7z7" data-parent-title="Redis Datastore">
+        <rect x="200.521875" y="1160.85" width="181.08125" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="291.0625" y="1186.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Redis Persistence</tspan>
+        </text>
+    </g>
+    <g data-node-id="btRMprPFMTYwOjiTlAdgI" data-type="subtopic" data-title="Redis with Express.js"
+        data-parent-id="TvFrieWUpgRrIRJ0DH7z7" data-parent-title="Redis Datastore">
+        <rect x="-402.821875" y="1217.85" width="202.3" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-301.671875" y="1243.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Redis with Express.js</tspan>
+        </text>
+    </g>
+    <g data-node-id="l7jRs6N1dStiNHHeTK_Uh" data-type="subtopic"
+        data-title="Cloud Services for Redis" data-parent-id="TvFrieWUpgRrIRJ0DH7z7"
+        data-parent-title="Redis Datastore">
+        <rect x="200.521875" y="1217.85" width="230.253125" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="315.6484375" y="1243.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Cloud Services for Redis</tspan>
+        </text>
+    </g>
+    <g data-node-id="TvFrieWUpgRrIRJ0DH7z7" data-type="topic" data-title="Redis Datastore"
+        data-parent-id="Pn1Mp-6A6_120GszONO2U" data-parent-title="Express.js Framework">
+        <rect x="-82.821875" y="1103.85" width="165.64375" height="50.8" rx="5" fill="#fdff00"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="0" y="1129.25" text-anchor="middle" dominant-baseline="middle" font-size="17"
+            fill="black">
+            <tspan>Redis Datastore</tspan>
+        </text>
+    </g>
+    <g data-node-id="Snsb1ppx_rPZYb-0njKSz" data-type="subtopic" data-title="Node.js Module System"
+        data-parent-id="vBc2nl2N9e8QyGBaCihvf" data-parent-title="Node.js Basics">
+        <rect x="-415.275" y="1342.85" width="220.378125" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-305.0859375" y="1368.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Node.js Module System</tspan>
+        </text>
+    </g>
+    <g data-node-id="lR7QsnwqhpZY6J0lvd-Ao" data-type="subtopic"
+        data-title="Debugging Node.js applications" data-parent-id="vBc2nl2N9e8QyGBaCihvf"
+        data-parent-title="Node.js Basics">
+        <rect x="194.896875" y="1342.85" width="284.8" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="337.296875" y="1368.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Debugging Node.js applications</tspan>
+        </text>
+    </g>
+    <g data-node-id="MxvaMtvLY_V6wosFVmFjN" data-type="subtopic"
+        data-title="Understanding Asynchronous Programming in Node.js"
+        data-parent-id="vBc2nl2N9e8QyGBaCihvf" data-parent-title="Node.js Basics">
+        <rect x="-648.759375" y="1399.85" width="453.8625" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-421.828125" y="1425.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Understanding Asynchronous Programming in Node.js</tspan>
+        </text>
+    </g>
+    <g data-node-id="fWCtnfeSDO9hSdxNQFjOO" data-type="subtopic"
+        data-title="Testing with Mocha and Chai" data-parent-id="vBc2nl2N9e8QyGBaCihvf"
+        data-parent-title="Node.js Basics">
+        <rect x="194.896875" y="1399.85" width="261.628125" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="325.7109375" y="1425.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Testing with Mocha and Chai</tspan>
+        </text>
+    </g>
+    <g data-node-id="or8mUV31i6t8mxmZYtQ0Z" data-type="subtopic"
+        data-title="Working with File System in Node.js" data-parent-id="vBc2nl2N9e8QyGBaCihvf"
+        data-parent-title="Node.js Basics">
+        <rect x="-505.228125" y="1456.85" width="310.33125" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-350.0625" y="1482.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Working with File System in Node.js</tspan>
+        </text>
+    </g>
+    <g data-node-id="vBc2nl2N9e8QyGBaCihvf" data-type="topic" data-title="Node.js Basics"
+        data-parent-id="TvFrieWUpgRrIRJ0DH7z7" data-parent-title="Redis Datastore">
+        <rect x="-77.196875" y="1342.85" width="154.39375" height="50.8" rx="5" fill="#fdff00"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="0" y="1368.25" text-anchor="middle" dominant-baseline="middle" font-size="17"
+            fill="black">
+            <tspan>Node.js Basics</tspan>
+        </text>
+    </g>
+    <g data-node-id="gHdruzC0FEVA1fAX0LYNY" data-type="subtopic"
+        data-title="Understanding HTTP Cycle" data-parent-id="cSWTyQdjXglVCAi4yz7oJ"
+        data-parent-title="HTTP &amp; WebSockets">
+        <rect x="-467.4078125" y="1581.85" width="249.925" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-342.4453125" y="1607.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Understanding HTTP Cycle</tspan>
+        </text>
+    </g>
+    <g data-node-id="SUbD5c9bCSmmEkPYER5pl" data-type="subtopic" data-title="API Testing"
+        data-parent-id="cSWTyQdjXglVCAi4yz7oJ" data-parent-title="HTTP &amp; WebSockets">
+        <rect x="217.4828125" y="1581.85" width="127.253125" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="281.109375" y="1607.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>API Testing</tspan>
+        </text>
+    </g>
+    <g data-node-id="1zfp7vDZCMbXhYmM0hFGL" data-type="subtopic" data-title="WebSockets"
+        data-parent-id="cSWTyQdjXglVCAi4yz7oJ" data-parent-title="HTTP &amp; WebSockets">
+        <rect x="-353.7203125" y="1638.85" width="136.2375" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-285.6015625" y="1664.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>WebSockets</tspan>
+        </text>
+    </g>
+    <g data-node-id="waFCLPpoVoMRtCbrU5Z8u" data-type="subtopic" data-title="Security in HTTP"
+        data-parent-id="cSWTyQdjXglVCAi4yz7oJ" data-parent-title="HTTP &amp; WebSockets">
+        <rect x="217.4828125" y="1638.85" width="168.39375" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="301.6796875" y="1664.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Security in HTTP</tspan>
+        </text>
+    </g>
+    <g data-node-id="SEcshs8myhd7Dx5957_Zo" data-type="subtopic" data-title="HTTP/2"
+        data-parent-id="cSWTyQdjXglVCAi4yz7oJ" data-parent-title="HTTP &amp; WebSockets">
+        <rect x="-320.0640625" y="1695.85" width="102.58125" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="-268.7734375" y="1721.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>HTTP/2</tspan>
+        </text>
+    </g>
+    <g data-node-id="uFjIRqGs28gMeMMIKXLpA" data-type="subtopic" data-title="Performance in HTTP"
+        data-parent-id="cSWTyQdjXglVCAi4yz7oJ" data-parent-title="HTTP &amp; WebSockets">
+        <rect x="217.4828125" y="1695.85" width="206.628125" height="50.8" rx="5" fill="#ffe599"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="320.796875" y="1721.25" text-anchor="middle" dominant-baseline="middle"
+            font-size="17" fill="black">
+            <tspan>Performance in HTTP</tspan>
+        </text>
+    </g>
+    <g data-node-id="cSWTyQdjXglVCAi4yz7oJ" data-type="topic" data-title="HTTP &amp; WebSockets"
+        data-parent-id="vBc2nl2N9e8QyGBaCihvf" data-parent-title="Node.js Basics">
+        <rect x="-99.7828125" y="1581.85" width="199.565625" height="50.8" rx="5" fill="#fdff00"
+            stroke="black" stroke-width="2.7"></rect>
+        <text x="0" y="1607.25" text-anchor="middle" dominant-baseline="middle" font-size="17"
+            fill="black">
+            <tspan>HTTP &amp; WebSockets</tspan>
+        </text>
+    </g>
+    <text x="0" y="1743" text-anchor="middle" dominant-baseline="middle" font-size="17"
+    fill="black">
+    <tspan>Generated by </tspan>
+    <tspan>
+        <a href='https://roadmap.sh/ai/mastering-vern-stack' style=' color: #0056b3;
+        text-decoration: none;'> roadmap.sh</a>
+    </tspan>
+</text>
+   
+</svg>
