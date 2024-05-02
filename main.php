@@ -219,7 +219,7 @@ Node.js web application framework
 MERN stack is popular stack to build
 dynamic full-stack web apps.
               </pre>
-              <p><a class="btn btn-secondary" href="./">View details »</a></p>
+              <p><a class="btn btn-secondary" href="./mernStack.php">View details »</a></p>
             </div>
           </div>
         </div>
