@@ -1,0 +1,180 @@
+{
+    "introduction": {
+      "title": "What is AngularJS?",
+      "description": "AngularJS is a JavaScript framework designed to build dynamic web applications. It extends HTML with additional attributes called directives and binds data to HTML with expressions.",
+      "scriptTag": "<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js'></script>"
+    },
+    "features": {
+      "extendsHTML": {
+        "title": "AngularJS Extends HTML",
+        "commands": [
+          { "command": "ng-app", "description": "Defines an AngularJS application." },
+          { "command": "ng-model", "description": "Binds the value of HTML controls to application data." },
+          { "command": "ng-bind", "description": "Binds application data to the HTML view." }
+        ]
+      },
+      "history": {
+        "title": "AngularJS History",
+        "content": [
+          "AngularJS version 1.0 was released in 2012.",
+          "Miško Hevery, a Google employee, started working on AngularJS in 2009.",
+          "The project quickly gained traction and is now officially supported by Google."
+        ]
+      }
+    },
+    "example": {
+      "title": "AngularJS Example",
+      "htmlContent": "<!DOCTYPE html><html><script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js'></script><body><div ng-app=''><p>Name: <input type='text' ng-model='name'></p><p ng-bind='name'></p></div></body></html>"
+    },
+    "setup": {
+      "title": "Setup and Configuration",
+      "commands": [
+        { "command": "npm install -g @angular/cli", "description": "Installs Angular CLI globally." },
+        { "command": "ng new best-practices --prefix best", "description": "Creates a new Angular project with a specific prefix for components." },
+        { "command": "ng new --help", "description": "Displays help for the 'ng new' command." },
+        { "command": "ng new best-practices --dry-run", "description": "Simulates the creation of a new project without actually writing any files." }
+      ]
+    },
+    "linting": {
+      "title": "Lint for Formatting",
+      "commands": [
+        { "command": "ng lint my-app --fix", "description": "Fixes code smells and formats code properly." },
+        { "command": "ng lint my-app", "description": "Checks for linting issues in the specified Angular app." },
+        { "command": "ng lint my-app --format stylish", "description": "Formats lint output in a stylish manner." },
+        { "command": "ng lint my-app --help", "description": "Provides help for the lint command." }
+      ]
+    },
+    "blueprints": {
+      "title": "Angular CLI Blueprints",
+      "description": "Blueprints help to quickly scaffold elements like components, services, classes, interfaces, etc.",
+      "commands": [
+        { "command": "ng g d directive-name", "description": "Generate a new directive." },
+        { "command": "ng g p init-caps", "description": "Generate a new pipe with a specified name." },
+        { "command": "ng g cl models/customer", "description": "Generate a new class in the models directory." },
+        { "command": "ng g c my-component --flat true", "description": "Generate a new component without creating a new folder." },
+        { "command": "ng g i models/person", "description": "Generate a new interface in the models folder." },
+        { "command": "ng g e models/gender", "description": "Generate a new enumeration in the models folder." },
+        { "command": "ng g s service-name", "description": "Generate a new service." }
+      ],
+      "flags": [
+        { "flag": "--spec", "usage": "Check if the template will be a .ts file." },
+        { "flag": "--inline-template (-t)", "usage": "Check if the template will be inline within the .ts file." },
+        { "flag": "--inline-style (-s)", "usage": "Check if the style will be inline within the .ts file." },
+        { "flag": "--prefix", "usage": "Assign a specific prefix to the generated elements." }
+      ]
+    },
+    "buildingAndServing": {
+      "title": "Building and Serving Angular Applications",
+      "description": "Commands for building and serving Angular applications, allowing various configurations for development and production environments.",
+      "commands": [
+        { "command": "ng build", "description": "Builds the application and stores the output in the /dist folder." },
+        { "command": "ng build --aot", "description": "Performs an Ahead-Of-Time compilation for the build." },
+        { "command": "ng build --prod", "description": "Creates an optimized production build." },
+        { "command": "ng serve -o", "description": "Serves the application and automatically opens it in a browser." },
+        { "command": "ng serve --live-reload", "description": "Serves the application with live reload enabled." },
+        { "command": "ng serve --ssl", "description": "Serves the application using SSL." }
+      ]
+    },
+    "newCapabilities": {
+      "title": "Adding New Capabilities to Angular Projects",
+      "description": "Commands to add new libraries or capabilities to Angular projects.",
+      "commands": [
+        { "command": "ng add @angular/material", "description": "Adds Angular Material to the project." },
+        { "command": "ng g @angular/material:material-nav --name nav", "description": "Generates a Material Design navigation component." }
+      ]
+    },
+    "componentsAndTemplates": {
+      "title": "Components and Templates",
+      "description": "Components are fundamental UI building blocks in Angular. They form the application's structure.",
+      "sampleComponent": {
+        "title": "Sample Component",
+        "code": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.less']\n})\n\nexport class AppComponent {\n  title = 'Hello World';\n}"
+      }
+    },
+    "inputOutput": {
+      "title": "Input and Output",
+      "description": "Angular's @Input and @Output decorators facilitate component interaction by allowing data to flow between parent and child components.",
+      "examples": [
+        {
+          "context": "Input - Passing data to a child component",
+          "childComponent": { "code": "export class SampleComponent {\n  @Input() value: any;\n}" },
+          "parentUsage": "<app-sample-component [value]=\"myValue\"></app-sample-component>"
+        },
+        {
+          "context": "Output - Emitting events to a parent component",
+          "childComponent": { "code": "@Output() myEvent: EventEmitter = new EventEmitter();\n\nonRemoved(item: MyModel) {\n  this.myEvent.emit(item);\n}" },
+          "parentUsage": "<app-my-component (myEvent)=\"someFunction()\"></app-my-component>"
+        }
+      ]
+    },
+    "viewChildDecorator": {
+      "title": "ViewChild Decorator",
+      "description": "ViewChild allows a one-component hierarchical relationship to access another component, directive, or DOM element directly.",
+      "usage": {
+        "code": "@ViewChild(NumberComponent)\nprivate numberComponent: NumberComponent;\n\nincrease() {\n  this.numberComponent.increaseByOne();\n}\n\ndecrease() {\n  this.numberComponent.decreaseByOne();\n}"
+      }
+    },
+    "routing": {
+      "title": "Angular Routing",
+      "description": "Angular Router enables navigation from one view to another as users perform application tasks.",
+      "sampleRouting": {
+        "title": "Sample Routing Configuration",
+        "code": "const appRoutes: Routes = [\n  { path: 'crisis-center', component: CrisisListComponent },\n  { path: 'prod/:id', component: HeroDetailComponent },\n  {\n    path: 'products',\n    component: ProductListComponent,\n    data: { title: 'Products List' }\n  },\n  { path: '',\n    redirectTo: '/products',\n    pathMatch: 'full'\n  },\n  { path: '**', component: PageNotFoundComponent }\n];\n\nRouterModule.forRoot(appRoutes)"
+      }
+    },
+    "modules": {
+      "title": "Angular Modules",
+      "description": "Angular applications are modular and use NgModules to organize code into cohesive blocks related to an application domain, workflow, or set of capabilities.",
+      "sampleModule": {
+        "title": "Sample Module Configuration",
+        "code": "import { BrowserModule } from '@angular/platform-browser';\nimport { NgModule } from '@angular/core';\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\n\n@NgModule({\n  declarations: [AppComponent],\n  imports: [BrowserModule, AppRoutingModule],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }"
+      }
+    },
+    "services": {
+      "title": "Angular Services",
+      "description": "Services in Angular are broadly used to share business logic, data interaction, and function as data providers across components without duplicating code.",
+      "sampleService": {
+        "title": "Sample Service with Data Fetching Function",
+        "code": "@Injectable()\nexport class MyService {\n  public items: Item[];\n\n  constructor() { }\n\n  getSth() {\n    // some implementation\n  }\n}"
+      }
+    },
+    "httpClient": {
+      "title": "HttpClient",
+      "description": "HttpClient is used to handle HTTP requests within Angular applications, providing an easy way to interact with APIs and fetch or send data.",
+      "setup": {
+        "importModule": "import { HttpClientModule } from '@angular/common/http';",
+        "usage": "The HttpClientModule must be imported in your Angular application's main module."
+      },
+      "methods": {
+        "GET": {
+          "code": "import { HttpClient } from '@angular/common/http';\n\n@Injectable()\nexport class DataService {\n  constructor(private http: HttpClient) { }\n\n  public getData(): Observable<any> {\n    return this.http.get('api/users/2');\n  }\n}",
+          "description": "Example of using HttpClient to perform a GET request."
+        },
+        "POST": {
+          "code": "import { HttpClient, HttpHeaders } from '@angular/common/http';\n\n@Injectable()\nexport class DataService {\n  constructor(private http: HttpClient) { }\n\n  public send(val1: any, val2: any): Observable<any> {\n    const object = new SendModel(val1, val2);\n    const options = { headers: new HttpHeaders({'Content-type': 'application/json'}) };\n    return this.http.post(environment.apiUrl + 'api/login', object, options);\n  }\n}",
+          "description": "Example of using HttpClient to perform a POST request."
+        }
+      }
+    },
+    "forms": {
+      "title": "Angular Forms",
+      "description": "Angular provides two types of forms: Template-Driven Forms and Reactive Forms. Here we focus on Template-Driven Forms.",
+      "templateDrivenForms": {
+        "description": "In Template-Driven Forms, form logic like validation is kept in the template itself.",
+        "sampleHtml": "<form name='form' (ngSubmit)='f.form.valid && onSubmit()' #f='ngForm' novalidate>\n  <div class='form-group'>\n    <label for='firstName'>First Name</label>\n    <input type='text' class='form-control' name='firstName' [(ngModel)]='model.firstName' #firstName='ngModel' [ngClass]='{\"is-invalid\": f.submitted && firstName.invalid}' required />\n    <div *ngIf='f.submitted && firstName.invalid' class='invalid-feedback'>\n      <div *ngIf='firstName.errors.required'>First Name is required</div>\n    </div>\n  </div>\n  <div class='form-group'>\n    <button class='btn btn-primary'>Register</button>\n  </div>\n</form>"
+      }
+    },
+    "unitTesting": {
+      "title": "Unit Testing in Angular",
+      "description": "Unit testing in Angular is typically done using the Jasmine test framework, which allows for behavior-driven development.",
+      "serviceTests": {
+        "description": "Testing services in Angular involves checking the functionality independently of the component it might be used in.",
+        "example": "describe('MyService', () => {\n  let service: MyService;\n  beforeEach(() => service = new MyService();\n  it('#fetch should update data', () => {\n    service.fetchData();\n    expect(service.data.length).toBe(4);\n    expect(service.data[0].id).toBe(1);\n  });\n});",
+        "asyncTests": {
+          "description": "For asynchronous operations, tests must handle the timing of data responses.",
+          "example": "it('http client works', (done: DoneFn) => {\n  service.getUser().subscribe((data) => {\n    expect(data).toBe('test');\n    done();\n  });\n});"
+        }
+      }
+    }
+  }
+  

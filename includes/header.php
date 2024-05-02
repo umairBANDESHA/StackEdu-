@@ -72,9 +72,8 @@ if (isset($_SESSION['role'])) {
             <ul class="dropdown-menu text-small">
               <li><a class="dropdown-item" href="./courses.php">MERN Stack</a></li>
               <li><a class="dropdown-item" href="./courses.php">MEAN Stack</a></li>
-              <li><a class="dropdown-item" href="./courses.php">Django Stack</a></li>
-              <li><a class="dropdown-item" href="./courses.php">Laravel Stack</a></li>
-              <li><a class="dropdown-item" href="./courses.php">Linux Stack</a></li>
+              <li><a class="dropdown-item" href="./courses.php">MEVN Stack</a></li>
+             
               <!-- <li><hr class="dropdown-divider" /></li> -->
             </ul>
           </li>
