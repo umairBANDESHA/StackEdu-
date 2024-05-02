@@ -1,0 +1,92 @@
+{"expressJs":{
+    "title": "Express.js",
+    "introduction": {
+      "description": "Express.js is a fast, flexible, and minimalist web framework for Node.js. It’s an effective tool that simplifies building web applications and APIs using JavaScript on the server side. Express is open-source, developed and maintained by the Node.js foundation."
+    },
+    "whyLearnExpress": {
+      "title": "Why Learn Express.js?",
+      "description": "Express.js offers a robust set of features that enhance your productivity and streamline your web application. It makes it easier to organize your application’s functionality with middleware and routing, adds helpful utilities to Node HTTP objects, and facilitates the rendering of dynamic HTTP objects."
+    },
+    "coreFeatures": {
+      "expressFunction": {
+        "description": "Creates an Express application. The express() function is a top-level function exported by the express module.",
+        "code": "const express = require('express')\nconst app = express()"
+      },
+      "applicationObject": {
+        "description": "The app object conventionally denotes the Express application. It has methods for routing HTTP requests, configuring middleware, rendering HTML views, and registering a template engine.",
+        "examples": [
+          {
+            "description": "Creating and setting up the Express application.",
+            "code": "const express = require('express')\nconst app = express()\n\napp.get('/', (req, res) => {\n  res.send('hello world')\n})\n\napp.listen(3000)"
+          }
+        ]
+      },
+      "mountPath": {
+        "description": "The app.mountpath property contains one or more path patterns on which a sub-app was mounted.",
+        "example": "const express = require('express')\n\nconst app = express() // the main app\nconst admin = express() // the sub app\n\nadmin.get('/', (req, res) => {\n  console.log(admin.mountpath) // /admin\n  res.send('Admin Homepage')\n})\n\napp.use('/admin', admin) // mount the sub app"
+      },
+      "router": {
+        "description": "The application’s in-built instance of router. This is created lazily, on first access, and you can add middleware and HTTP method routes to the router just like an application.",
+        "code": "const express = require('express')\nconst app = express()\nconst router = app.router\n\nrouter.get('/', (req, res) => {\n  res.send('hello world')\n})\n\napp.listen(3000)"
+      }
+    },"routerObjects": {
+        "title": "Router Objects",
+        "description": "You can group routes together using routers which can be used for organization and to apply middleware to a specific group of routes.",
+        "creatingRouter": {
+          "description": "Create a Router object and register it with the application for routes with a certain prefix.",
+          "code": "const router = express.Router();\napp.use('/prefix', router);\nrouter.use(middlewareFunction);\nrouter.get('/endpoint', routerHandler); // URL is /prefix/endpoint"
+        }
+      },
+      "connectingToDatabases": {
+        "title": "Connecting to Databases",
+        "description": "The following libraries can help you connect to different databases:",
+        "libraries": [
+          {
+            "name": "mongoose",
+            "description": "for connecting to a MongoDB database.",
+            "link": "https://mongoosejs.com/"
+          },
+          {
+            "name": "sequelize",
+            "description": "ORM for SQL databases like PostgreSQL, MySQL, etc.",
+            "link": "https://sequelize.org/"
+          },
+          {
+            "name": "objection",
+            "description": "ORM for SQL databases (PostgreSQL, MySQL, etc.).",
+            "link": "https://vincit.github.io/objection.js/"
+          },
+          {
+            "name": "waterline",
+            "description": "ORM for SQL databases (PostgreSQL, MySQL, etc.).",
+            "link": "https://waterlinejs.org/"
+          }
+        ]
+      },
+      "makingApiCalls": {
+        "title": "Making API Calls",
+        "description": "While you can't use fetch natively in Node, and jQuery is only a frontend library, you have some alternatives for making API calls.",
+        "options": [
+          {
+            "name": "node-fetch",
+            "description": "A library that replicates the browser's fetch function.",
+            "link": "https://www.npmjs.com/package/node-fetch"
+          },
+          {
+            "name": "Axios",
+            "description": "A powerful library for making HTTP requests.",
+            "link": "https://axios-http.com/"
+          },
+          {
+            "name": "GOT",
+            "description": "A versatile HTTP request library.",
+            "link": "https://github.com/sindresorhus/got"
+          },
+          {
+            "name": "needle",
+            "description": "Another HTTP client library.",
+            "link": "https://www.npmjs.com/package/needle"
+          }
+        ]
+      }
+}}

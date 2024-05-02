@@ -1,0 +1,171 @@
+{
+    "vueJs": {
+      "vueIntroduction": {
+        "title": "Introduction to Vue.js",
+        "description": "Vue is a front-end JavaScript framework written in JavaScript. It is known for being lightweight and easy to start with, compared to other similar frameworks like React and Angular.",
+        "scriptTag": {
+          "title": "How to Add Vue to Your Web Page",
+          "description": "To add Vue to your web page, include the following script tag:",
+          "code": "{script src='https://unpkg.com/vue@3/dist/vue.global.js'}"
+        }
+      },
+      "whyLearnVue": {
+        "title": "Why Learn Vue?",
+        "description": "Vue is simple and easy to use. It handles both simple and complex projects efficiently. It has a growing popularity and strong community support. Vue abstracts complexities of HTML-JavaScript connection and offers features like template-based syntax and two-way data binding."
+      },
+
+      "creatingAppWithVite": {
+        "title": "Creating Your App with Vite",
+        "description": "Quick Vue3 development environment setup using Vite.",
+        "commands": [
+          "npm init vite-app <project-name>",
+          "cd <project-name>",
+          "npm install",
+          "npm run dev"
+        ]
+      },
+      "templateSyntax": {
+        "title": "Template Syntax",
+        "description": "Vue provides various options for template syntax.",
+        "textInterpolation": {
+          "description": "Text Interpolation Options",
+          "list": [
+            "<span> { msg } </span>",
+            "{span v-text='msg}"
+          ]
+        },
+        "settingInnerHTML": {
+          "description": "Setting Inner HTML",
+          "code": "{span v-html='rawHTML'}"
+        },
+        "jsExpressions": {
+          "title": "Using JavaScript Expressions",
+          "description": "Vue supports JavaScript expressions within double curly braces.",
+          "validExample": "<span> {msg.split('').reverse().join('') } </span>",
+          "invalidExample": "<span> { let msg = 'hi' } </span>"
+        }
+      },
+      "directives": {
+        "title": "Vue Directives",
+        "description": "Directives are special tokens in the markup that tell the library to do something to a DOM element.",
+        "list": [
+          {"name": "v-if", "usage": "Puts element in DOM if condition is true."},
+          {"name": "v-else-if", "usage": "Used for else-if condition."},
+          {"name": "v-else", "usage": "Used for else condition."},
+          {"name": "v-show", "usage": "Toggles display CSS property based on the truthiness of the expression."},
+          {"name": "v-text", "usage": "Sets the inner text of an element."},
+          {"name": "v-html", "usage": "Sets the inner HTML of an element."},
+          {"name": "v-for", "usage": "Renders a list by looping over items."},
+          {"name": "v-on or @", "usage": "Attaches an event listener."},
+          {"name": "v-bind or :", "usage": "Dynamically binds one or more attributes, or a component prop to an expression."},
+          {"name": "v-model", "usage": "Creates a two-way binding on an input or a component."},
+          {"name": "v-once", "usage": "Renders plain HTML elements only once, and they do not update with reactive data changes."}
+        ]
+      },
+      "conditionalRendering": {
+        "title": "Conditional Rendering",
+        "description": "Rendering elements based on conditions using Vue directives.",
+        "examples": [
+          {"usage": "v-if='date == today'", "description": "Renders the element if date equals today."},
+          {"usage": "v-else-if='!done'", "description": "Renders the element if the previous v-if or v-else-if was false and this condition is true."},
+          {"usage": "v-else", "description": "Renders the element if all preceding conditions are false."}
+        ]
+      },
+      "eventHandling": {
+        "title": "Handling Events",
+        "description": "Vue.js provides v-on directive to listen to DOM events and execute some JavaScript when they’re triggered.",
+        "examples": [
+          {"usage": "v-on:click='count'", "description": "Calls the 'count' method when the element is clicked."},
+          {"usage": ".stop, .prevent, .once, .self", "description": "Event modifiers can be used to modify standard JavaScript event behaviors."}
+        ]
+      },
+      "listRendering": {
+        "title": "List Rendering",
+        "description": "Rendering lists using the v-for directive.",
+        "examples": [
+          {"usage": "v-for='item in items'", "description": "Renders a list by repeating the element for each item in an array."},
+          {"usage": "v-for='(item, index) in items'", "description": "Renders a list and also provides access to the index of the current item in the loop."}
+        ]
+      },
+      "dataBinding": {
+        "title": "Binding Data",
+        "description": "Binding data to HTML attributes, properties, and styles.",
+        "examples": [
+          {"binding": "v-bind:id='objectID'", "description": "Binds the id attribute to the value of objectID."},
+          {"binding": "v-model='email'", "description": "Creates a two-way binding on an input field so that it automatically updates the data property when the user types."},
+          {"binding": "v-bind:class='{ error: hasError }'", "description": "Conditionally applies the 'error' class based on the truthiness of 'hasError'."}
+        ]
+      },
+      "inputModifiers": {
+        "title": "Input Modifiers",
+        "description": "Modifiers that can be used on <input> elements to alter their default behavior.",
+        "examples": [
+          { "binding": ".lazy", "description": "Updates on change event instead of on input." },
+          { "binding": ".trim", "description": "Removes whitespace from the input." }
+        ]
+      },
+      "bindingClassStyle": {
+        "title": "Binding Class and Style",
+        "description": "Binding classes and styles dynamically in Vue templates.",
+        "examples": [
+          { "binding": "class='{error: hasError}", "description": "Binds the 'error' class based on the truthiness of 'hasError'." },
+          { "binding": "style='{margin: space + \"px\"}'", "description": "Dynamically binds the 'margin' style to 'space' in pixels." }
+        ]
+      },
+      "vueLifecycleHooks": {
+        "title": "Vue.js Lifecycle Hooks",
+        "description": "Important lifecycle hooks in Vue.js for managing component behavior through different stages.",
+        "hooks": [
+          { "name": "onBeforeMount", "description": "Called right before the mounting begins: the render function is about to be called for the first time." },
+          { "name": "onMounted", "description": "Called after the instance has been mounted, where element, passed to app.mount, is replaced by the newly created vm.$el." },
+          { "name": "onBeforeUpdate", "description": "Called when data changes, before the DOM is patched." },
+          { "name": "onUpdated", "description": "Called after data changes on your component and the DOM re-renders." },
+          { "name": "onBeforeUnmount", "description": "Called right before a Vue instance is unmounted." },
+          { "name": "onUnmounted", "description": "Called after a Vue instance has been unmounted." }
+        ],
+        "example": "import { onMounted } from 'vue'; setup() { onMounted(() => { console.log('component mounted!') }); }"
+      },
+      "watchEffectFunction": {
+        "title": "watchEffect Function",
+        "description": "Automatically tracks reactive dependencies used during the function execution and re-runs if any dependencies change.",
+        "usage": "const site = ref('learnvue.co'); watchEffect(() => { console.log(site.value); });"
+      },
+      "templateRefs": {
+        "title": "Template Refs",
+        "description": "References to DOM elements within Vue templates.",
+        "usage": "<div ref='example'>Example Div</div>",
+        "script": "setup() { const example = ref(null); onMounted(() => { console.log(example.value); }); return { example }; }"
+      },
+      "topVueLibraries": {
+        "title": "Top Vue Libraries",
+        "description": "Popular Vue libraries for enhancing development.",
+        "libraries": [
+          { "name": "vue-cli", "description": "Provides a full system for rapid Vue development." },
+          { "name": "vue-router", "description": "The official router for Vue.js." },
+          { "name": "vuex", "description": "State management library for Vue.js." },
+          { "name": "axios", "description": "Promise-based HTTP client for the browser and Node.js." },
+          { "name": "vue-meta", "description": "Vue.js plugin for managing document head meta information." }
+        ]
+      },
+      "vueTesting": {
+        "title": "Vue Testing",
+        "description": "Writing tests for Vue components to ensure their correctness.",
+        "libraries": [
+          { "name": "Vue Test Utils", "description": "The official unit testing utility library for Vue.js applications, providing tools for testing Vue components." },
+          { "name": "Jest", "description": "Delightful JavaScript Testing Framework with a focus on simplicity." },
+          { "name": "Vue Testing Library", "description": "Simple and complete testing utilities that encourage good testing practices." }
+        ],
+        "example": "test('displays message when component is mounted', async () => { const wrapper = mount(MyComponent); expect(wrapper.text()).toContain('Hello World'); });"
+      },
+      "serverSideRendering": {
+        "title": "Server-Side Rendering (SSR)",
+        "description": "Rendering Vue applications on the server-side before sending HTML to the client.",
+        "libraries": [
+          { "name": "Nuxt.js", "description": "A framework for creating Universal Vue.js Applications." },
+          { "name": "Vite SSR", "description": "Server-side rendering with Vite for Vue 3 applications." }
+        ]
+      }
+    }
+  }
+  
+

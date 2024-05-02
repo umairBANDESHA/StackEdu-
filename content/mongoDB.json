@@ -1,0 +1,418 @@
+ {
+    "mongodb":{
+        "mongodbOverview": {
+          "title": "MongoDB",
+          "description": "MongoDB is a document database and can be installed locally or hosted in the cloud."
+        },
+        "databaseComparison": {
+          "title": "SQL vs Document Databases",
+          "description": [
+            "SQL databases are considered relational databases. They store related data in separate tables. When data is needed, it is queried from multiple tables to join the data back together.",
+            "MongoDB is a document database which is often referred to as a non-relational database. This does not mean that relational data cannot be stored in document databases. It means that relational data is stored differently. A better way to refer to it is as a non-tabular database.",
+            "MongoDB stores data in flexible documents. Instead of having multiple tables you can simply keep all of your related data together. This makes reading your data very fast.",
+            "You can still have multiple groups of data too. In MongoDB, instead of tables, these are called collections."
+          ]
+        },
+        "localVsCloud": {
+          "title": "Local vs Cloud Database",
+          "description": [
+            "MongoDB can be installed locally, which will allow you to host your own MongoDB server on your hardware. This requires you to manage your server, upgrades, and any other maintenance.",
+            "You can download and use the MongoDB open source Community Server on your hardware for free.",
+            "However, for this course we are going to use MongoDB Atlas, a cloud database platform. This is much easier than hosting your own local database.",
+            "To be able to experiment with the code examples, you will need access to a MongoDB database.",
+            "Sign up for a free MongoDB Atlas account to get started."
+          ]
+        },
+        "creatingCluster": {
+          "title": "Creating a Cluster",
+          "description": [
+            "After you have created your account, set up a free 'Shared Cluster' then choose your preferred cloud provider and region.",
+            "By default, MongoDB Atlas is completely locked down and has no external access.",
+            "You will need to set up a user and add your IP address to the list of allowed IP addresses.",
+            "Under 'Database Access', create a new user and keep track of the username and password.",
+            "Next, under 'Network Access', add your current IP address to allow access from your computer."
+          ]
+        },
+        "installMongoDBShell": {
+          "title": "Install MongoDB Shell (mongosh)",
+          "description": [
+            "There are many ways to connect to your MongoDB database.",
+            "We will start by using the MongoDB Shell, mongosh.",
+            "Use the official instructions to install mongosh on your operating system.",
+            "To verify that it has been installed properly, open your terminal and type: mongosh --version",
+            "You should see that the latest version is installed.",
+            "The version used in this tutorial is v1.3.1."
+          ]
+        },
+        "connectToDatabase": {
+          "title": "Connect to the database",
+          "description": [
+            "To connect to your database, you will need your database specific connection string.",
+            "In the MongoDB Atlas dashboard, under 'Databases', click the 'Connect' button for your Cluster.",
+            "Next, choose 'Connect with the MongoDB Shell'.",
+            "Copy your connection string.",
+            "Example: Your connection string should look similar to this: mongosh 'mongodb+srv://cluster0.ex4ht.mongodb.net/myFirstDatabase' --apiVersion 1 --username YOUR_USER_NAME"
+          ]
+        }, 
+        "mongoCommands": {
+            "showDatabases": {
+              "title": "Show Databases",
+              "description": "Displays all databases on the MongoDB server.",
+              "codeSnippet": [
+                "show dbs",
+                "db // prints the current database"
+              ]
+            },
+            "switchDatabase": {
+              "title": "Switch Database",
+              "description": "Switches the context to a specific database.",
+              "codeSnippet": "use <database_name>"
+            },
+            "showCollections": {
+              "title": "Show Collections",
+              "description": "Displays all collections in the current database.",
+              "codeSnippet": "show collections"
+            },
+            "runJavaScriptFile": {
+              "title": "Run JavaScript File",
+              "description": "Executes a JavaScript file in the context of the MongoDB shell.",
+              "codeSnippet": "load(\"myScript.js\")"
+            },
+            "databasesAndCollections": {
+              "title": "Databases and Collections",
+              "operations": {
+                "drop": {
+                  "title": "Drop",
+                  "description": "Removes the specified collection and its index definitions or drops the entire database.",
+                  "codeSnippet": [
+                    "db.coll.drop() // removes the collection and its index definitions",
+                    "db.dropDatabase() // double check that you are *NOT* on the PROD cluster..."
+                  ]
+                },
+                "createCollection": {
+                  "title": "Create Collection",
+                  "description": "Creates a collection with a $jsonschema validator to enforce data integrity.",
+                  "codeSnippet": "db.createCollection(\"contacts\", {\n   validator: {$jsonSchema: {\n      bsonType: \"object\",\n      required: [\"phone\"],\n      properties: {\n         phone: {\n            bsonType: \"string\",\n            description: \"must be a string and is required\"\n         },\n         email: {\n            bsonType: \"string\",\n            pattern: \"@mongodb.com$\",\n            description: \"must be a string and match the regular expression pattern\"\n         },\n         status: {\n            enum: [ \"Unknown\", \"Incomplete\" ],\n            description: \"can only be one of the enum values\"\n         }\n      }\n   }}\n})"
+                }
+              }
+            }, 
+            "CRUD": {
+              "Create": {
+                "title": "Create",
+                "commands": [
+                  {
+                    "operation": "insertOne",
+                    "description": "Inserts a single document into the collection.",
+                    "code": "db.coll.insertOne({name: \"Max\"})"
+                  },
+                  {
+                    "operation": "insertMany",
+                    "description": "Performs an ordered bulk insert of multiple documents.",
+                    "code": "db.coll.insertMany([{name: \"Max\"}, {name:\"Alex\"}])"
+                  },
+                  {
+                    "operation": "unorderedInsertMany",
+                    "description": "Performs an unordered bulk insert of multiple documents.",
+                    "code": "db.coll.insertMany([{name: \"Max\"}, {name:\"Alex\"}], {ordered: false})"
+                  },
+                  {
+                    "operation": "insertOneWithDate",
+                    "description": "Inserts a single document with the current ISO date.",
+                    "code": "db.coll.insertOne({date: ISODate()})"
+                  },
+                  {
+                    "operation": "insertOneWithWriteConcern",
+                    "description": "Inserts a single document with a specified write concern.",
+                    "code": "db.coll.insertOne({name: \"Max\"}, {\"writeConcern\": {\"w\": \"majority\", \"wtimeout\": 5000}})"
+                  }
+                ]
+              },
+              "Read": {
+                "title": "Read",
+                "commands": [
+                  {
+                    "operation": "findOne",
+                    "description": "Returns a single document from the collection.",
+                    "code": "db.coll.findOne()"
+                  },
+                  {
+                    "operation": "find",
+                    "description": "Returns a cursor to the documents that can be iterated over.",
+                    "code": "db.coll.find()"
+                  },
+                  {
+                    "operation": "findWithCondition",
+                    "description": "Returns documents that meet the specified conditions.",
+                    "code": "db.coll.find({name: \"Max\", age: 32})"
+                  },
+                  {
+                    "operation": "distinct",
+                    "description": "Finds the distinct values for a specified field across a single collection.",
+                    "code": "db.coll.distinct(\"name\")"
+                  },
+                  {
+                    "operation": "countDocuments",
+                    "description": "Counts the number of documents that match the query.",
+                    "code": "db.coll.countDocuments({age: 32})"
+                  },
+                  {
+                    "operation": "estimatedDocumentCount",
+                    "description": "Provides an estimated count of documents in a collection.",
+                    "code": "db.coll.estimatedDocumentCount()"
+                  }
+                ]
+              
+              },
+              "comparisonOperators": {
+                "title": "Comparison Operators",
+                "commands": [
+                  {"code": "db.coll.find({'year': {$gt: 1970}})", "description": "Finds documents where 'year' is greater than 1970."},
+                  {"code": "db.coll.find({'year': {$gte: 1970}})", "description": "Finds documents where 'year' is greater than or equal to 1970."},
+                  {"code": "db.coll.find({'year': {$lt: 1970}})", "description": "Finds documents where 'year' is less than 1970."},
+                  {"code": "db.coll.find({'year': {$lte: 1970}})", "description": "Finds documents where 'year' is less than or equal to 1970."},
+                  {"code": "db.coll.find({'year': {$ne: 1970}})", "description": "Finds documents where 'year' is not equal to 1970."},
+                  {"code": "db.coll.find({'year': {$in: [1958, 1959]}})", "description": "Finds documents where 'year' is either 1958 or 1959."},
+                  {"code": "db.coll.find({'year': {$nin: [1958, 1959]}})", "description": "Finds documents where 'year' is neither 1958 nor 1959."}
+                ]
+              },
+              "logicalOperators": {
+                "title": "Logical Operators",
+                "commands": [
+                  {"code": "db.coll.find({name: {$not: {$eq: 'Max'}}})", "description": "Finds documents where 'name' is not 'Max'."},
+                  {"code": "db.coll.find({$or: [{'year': 1958}, {'year': 1959}]})", "description": "Finds documents where 'year' is either 1958 or 1959."},
+                  {"code": "db.coll.find({$nor: [{price: 1.99}, {sale: true}]})", "description": "Finds documents where neither 'price' is 1.99 nor 'sale' is true."},
+                  {
+                    "code": "db.coll.find({$and: [{$or: [{qty: {$lt: 10}}, {qty: {$gt: 50}}]}, {$or: [{sale: true}, {price: {$lt: 5}}]}]})",
+                    "description": "Finds documents where 'qty' is either less than 10 or greater than 50, and either 'sale' is true or 'price' is less than 5."
+                  }
+                ]
+              },
+              "elementOperators": {
+                "title": "Element Operators",
+                "commands": [
+                  {"code": "db.coll.find({name: {$exists: true}})", "description": "Finds documents where 'name' field exists."},
+                  {"code": "db.coll.find({'zipCode': {$type: 2}})", "description": "Finds documents where 'zipCode' is a string."},
+                  {"code": "db.coll.find({'zipCode': {$type: 'string'}})", "description": "Finds documents where 'zipCode' is a string."}
+                ]
+              },
+              "aggregationPipeline": {
+                "title": "Aggregation Pipeline",
+                "commands": [
+                  {
+                    "code": "db.coll.aggregate([{$match: {status: 'A'}}, {$group: {_id: '$cust_id', total: {$sum: '$amount'}}}, {$sort: {total: -1}}])",
+                    "description": "Aggregates documents by 'cust_id', sums 'amount' for each, and sorts by 'total' in descending order."
+                  }
+                ]
+              },
+              "textSearch": {
+                "title": "Text Search",
+                "commands": [
+                  {
+                    "code": "db.coll.find({$text: {$search: 'cake'}}, {score: {$meta: 'textScore'}}).sort({score: {$meta: 'textScore'}})",
+                    "description": "Performs a text search for 'cake' and sorts results by text score."
+                  }
+                ]
+              },
+              "regexQueries": {
+                "title": "Regex Queries",
+                "commands": [
+                  {
+                    "code": "db.coll.find({name: /^Max/})",
+                    "description": "Finds documents where 'name' starts with 'Max'."
+                  },
+                  {
+                    "code": "db.coll.find({name: /^Max$/i})",
+                    "description": "Finds documents where 'name' matches 'Max' exactly, case insensitive."
+                  }
+                ]
+              },
+              "arrayOperations": {
+                "title": "Array Operations",
+                "commands": [
+                  {
+                    "code": "db.coll.find({tags: {$all: ['Realm', 'Charts']}})",
+                    "description": "Finds documents where 'tags' array contains both 'Realm' and 'Charts'."
+                  },
+                  {
+                    "code": "db.coll.find({field: {$size: 2}})",
+                    "description": "Finds documents where 'field' array has exactly two elements."
+                  },
+                  {
+                    "code": "db.coll.find({results: {$elemMatch: {product: 'xyz', score: {$gte: 8}}}})",
+                    "description": "Finds documents where 'results' array contains at least one element with 'product' as 'xyz' and 'score' greater than or equal to 8."
+                  }
+                ]
+              },
+              "projectionQueries": {
+                "title": "Projection Queries",
+                "commands": [
+                  {
+                    "code": "db.coll.find({'x': 1}, {'actors': 1})",
+                    "description": "Finds documents matching {'x': 1} and projects the 'actors' field along with '_id'."
+                  },
+                  {
+                    "code": "db.coll.find({'x': 1}, {'actors': 1, '_id': 0})",
+                    "description": "Finds documents matching {'x': 1} and projects only the 'actors' field, excluding '_id'."
+                  },
+                  {
+                    "code": "db.coll.find({'x': 1}, {'actors': 0, 'summary': 0})",
+                    "description": "Finds documents matching {'x': 1} and excludes the 'actors' and 'summary' fields from the result."
+                  }
+                ]
+              },
+              "sortSkipLimitQueries": {
+                "title": "Sort, Skip, Limit Queries",
+                "commands": [
+                  {
+                    "code": "db.coll.find({}).sort({'year': 1, 'rating': -1}).skip(10).limit(3)",
+                    "description": "Finds documents, sorts by 'year' ascending and 'rating' descending, skips the first 10, and limits the result to 3 documents."
+                  }
+                ]
+              },
+              "readConcernQueries": {
+                "title": "Read Concern",
+                "commands": [
+                  {
+                    "code": "db.coll.find().readConcern('majority')",
+                    "description": "Executes a read query that only considers data acknowledged by the majority of the replica set members."
+                  }
+                ]
+              },
+              "updateOperations": {
+      "title": "Update Operations",
+      "description": "Basic field update operations using various operators.",
+      "commands": [
+        {
+          "description": "Sets 'year' to 2016 and 'name' to Max.",
+          "code": "db.coll.updateOne({'_id': 1}, {$set: {'year': 2016, 'name': 'Max'}})"
+        },
+        {
+          "description": "Removes the 'year' field from the document.",
+          "code": "db.coll.updateOne({'_id': 1}, {$unset: {'year': 1}})"
+        },
+        {
+          "description": "Renames the 'year' field to 'date'.",
+          "code": "db.coll.updateOne({'_id': 1}, {$rename: {'year': 'date'}})"
+        },
+        {
+          "description": "Increments 'year' by 5.",
+          "code": "db.coll.updateOne({'_id': 1}, {$inc: {'year': 5}})"
+        },
+        {
+          "description": "Multiplies 'price' by 1.25 and 'qty' by 2.",
+          "code": "db.coll.updateOne({'_id': 1}, {$mul: {'price': NumberDecimal('1.25'), 'qty': 2}})"
+        },
+        {
+          "description": "Sets 'imdb' to minimum value of 5.",
+          "code": "db.coll.updateOne({'_id': 1}, {$min: {'imdb': 5}})"
+        },
+        {
+          "description": "Sets 'imdb' to maximum value of 8.",
+          "code": "db.coll.updateOne({'_id': 1}, {$max: {'imdb': 8}})"
+        },
+        {
+          "description": "Sets 'lastModified' to the current date.",
+          "code": "db.coll.updateOne({'_id': 1}, {$currentDate: {'lastModified': true}})"
+        },
+        {
+          "description": "Sets 'lastModified' to the current timestamp.",
+          "code": "db.coll.updateOne({'_id': 1}, {$currentDate: {'lastModified': {$type: 'timestamp'}}})"
+        }
+      ]
+              },
+              "arrayUpdates": {
+      "description": "Operations specific to updating arrays within documents.",
+      "commands": [
+        {
+          "description": "Pushes an element to the 'array'.",
+          "code": "db.coll.updateOne({'_id': 1}, {$push: {'array': 1}})"
+        },
+        {
+          "description": "Removes an element from the 'array'.",
+          "code": "db.coll.updateOne({'_id': 1}, {$pull: {'array': 1}})"
+        },
+        {
+          "description": "Adds an element to the 'array' if it does not already exist.",
+          "code": "db.coll.updateOne({'_id': 1}, {$addToSet: {'array': 2}})"
+        },
+        {
+          "description": "Removes the last element from the 'array'.",
+          "code": "db.coll.updateOne({'_id': 1}, {$pop: {'array': 1}})"
+        },
+        {
+          "description": "Removes the first element from the 'array'.",
+          "code": "db.coll.updateOne({'_id': 1}, {$pop: {'array': -1}})"
+        },
+        {
+          "description": "Removes all occurrences of specified elements from the 'array'.",
+          "code": "db.coll.updateOne({'_id': 1}, {$pullAll: {'array': [3, 4, 5]}})"
+        },
+        {
+          "description": "Pushes multiple elements to the 'scores' array.",
+          "code": "db.coll.updateOne({'_id': 1}, {$push: {'scores': {$each: [90, 92]}}})"
+        },
+        {
+          "description": "Pushes and sorts elements in the 'scores' array.",
+          "code": "db.coll.updateOne({'_id': 2}, {$push: {'scores': {$each: [40, 60], $sort: 1}}})"
+        },
+        {
+          "description": "Updates an element in the 'grades' array if it matches a condition.",
+          "code": "db.coll.updateOne({'_id': 1, 'grades': 80}, {$set: {'grades.$': 82}})"
+        },
+        {
+          "description": "Increments all elements in the 'grades' array.",
+          "code": "db.coll.updateMany({}, {$inc: {'grades.$[]': 10}})"
+        },
+        {
+          "description": "Sets specific elements in the 'grades' array based on a condition.",
+          "code": "db.coll.updateMany({}, {$set: {'grades.$[element]': 100}}, {multi: true, arrayFilters: [{'element': {$gte: 100}}]})"
+        }
+      ]
+              },
+              "advancedUpdateOperations": {
+                "title": "Advanced Update Operations",
+                "commands": [
+                  {
+                    "description": "Atomically finds a document and updates it while returning the updated document.",
+                    "code": "db.coll.findOneAndUpdate({'name': 'Max'}, {$inc: {'points': 5}}, {returnNewDocument: true})"
+                  },
+                  {
+                    "description": "Updates an existing document or inserts a new document if it does not exist (upsert).",
+                    "code": "db.coll.updateOne({'_id': 1}, {$set: {item: 'apple'}, $setOnInsert: {defaultQty: 100}}, {upsert: true})"
+                  },
+                  {
+                    "description": "Replaces a document with a new document.",
+                    "code": "db.coll.replaceOne({'name': 'Max'}, {'firstname': 'Maxime', 'surname': 'Beugnet'})"
+                  },
+                  {
+                    "description": "Updates multiple documents while specifying the write concern.",
+                    "code": "db.coll.updateMany({}, {$set: {'x': 1}}, {'writeConcern': {'w': 'majority', 'wtimeout': 5000}})"
+                  }
+                ]
+              },
+              "deleteOperations": {
+                "title": "Delete Operations",
+                "commands": [
+                  {
+                    "description": "Deletes a single document matching the specified criteria.",
+                    "code": "db.coll.deleteOne({name: 'Max'})"
+                  },
+                  {
+                    "description": "Deletes multiple documents that match the specified criteria with write concern.",
+                    "code": "db.coll.deleteMany({name: 'Max'}, {'writeConcern': {'w': 'majority', 'wtimeout': 5000}})"
+                  },
+                  {
+                    "description": "Deletes all documents in the collection (use with caution).",
+                    "code": "db.coll.deleteMany({})"
+                  },
+                  {
+                    "description": "Atomically finds a document and deletes it.",
+                    "code": "db.coll.findOneAndDelete({'name': 'Max'})"
+                  }
+                ]
+              }
+
+            }
+        }
+    }
+}
