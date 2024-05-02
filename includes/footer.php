@@ -4,10 +4,10 @@
       >
         <div class="col-md-4 d-flex align-items-center">
           <a
-            href="../main.php"
+            href="./main.php"
             class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
           >
-            <img src="../logo/7.png" alt="" width="30" height="24" />
+            <img src="./logo/7.png" alt="" width="30" height="24" />
           </a>
           <span class="mb-3 mb-md-0 text-body-secondary"
             >© 2024 StackEdu, Inc</span
@@ -17,17 +17,17 @@
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
           <li class="ms-3">
             <a class="text-body-secondary" href="#"
-              ><img src="../icons/facebook.png" width="24" height="24" alt=""
+              ><img src="./icons/facebook.png" width="24" height="24" alt=""
             /></a>
           </li>
           <li class="ms-3">
             <a class="text-body-secondary" href="#">
-              <img src="../icons/instagram.png" alt="" width="24" height="24"
+              <img src="./icons/instagram.png" alt="" width="24" height="24"
             /></a>
           </li>
           <li class="ms-3">
             <a class="text-body-secondary" href="#">
-              <img src="../icons/twitter.png" alt="" width="24" height="24"
+              <img src="./icons/twitter.png" alt="" width="24" height="24"
             /></a>
           </li>
         </ul>

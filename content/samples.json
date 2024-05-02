@@ -1,0 +1,473 @@
+{
+  "reactAppWithVite": {
+      "title": "React App with Vite",
+      "description": "Vite is a modern build tool that significantly improves the frontend development experience. It requires Node.js version 20+.",
+      "installation": {
+          "createViteProject": "npm create vite@latest my-react-project",
+          "installDependencies": "cd my-react-project\nnpm install"
+      },
+      "usage": {
+          "runDevelopmentServer": "npm run dev"
+      }
+  },
+  "whatIsReact": {
+      "title": "What is React?",
+      "description": "React, sometimes referred to as a frontend JavaScript framework, is a JavaScript library created by Facebook. It is a tool for building UI components."
+  },
+  "howReactWorks": {
+      "title": "How does React Work?",
+      "description": "React creates a VIRTUAL DOM in memory. Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating before making the changes in the browser DOM. React only changes what needs to be changed."
+  },
+  "reactHistory": {
+      "title": "React.js History",
+      "description": "The current version of React.js is V18.0.0 (April 2022). React.js was initially released to the public (V0.3.0) in July 2013. It was first used in 2011 for Facebook's Newsfeed feature. Facebook Software Engineer, Jordan Walke, created it. The current version of create-react-app is v5.0.1 (April 2022). create-react-app includes built tools such as webpack, Babel, and ESLint."
+  },
+  "reactAppCreatedWithVite": {
+      "title": "React App created using Vite",
+      "code": {
+          "appJsx": "import { useState } from 'react'\nimport reactLogo from './assets/react.svg'\nimport viteLogo from '/vite.svg'\nimport './App.css'\n\nfunction App() {\n  const [count, setCount] = useState(0)\n\n  return (\n    <>\n      <div>\n        <a href='https://vitejs.dev' target='_blank'>\n          <img src={viteLogo} className='logo' alt='Vite logo' />\n        </a>\n        <a href='https://react.dev' target='_blank'>\n          <img src={reactLogo} className='logo react' alt='React logo' />\n        </a>\n      </div>\n      <h1>Vite + React</h1>\n      <div className='card'>\n        <button onClick={() => setCount((count) => count + 1)}>\n          count is {count}\n        </button>\n        <p>\n          Edit <code>src/App.jsx</code> and save to test HMR\n        </p>\n      </div>\n      <p className='read-the-docs'>\n        Click on the Vite and React logos to learn more\n      </p>\n    </>\n  )\n}\n\nexport default App"
+      }
+  },
+  "reactComponent": {
+      "title": "React Component",
+      "description": "The basic structure of a React component using functional components.",
+      "code": {
+          "appFunction": "function App() {\n  return (\n    <div className='App'>\n      <h1>Hello World!</h1>\n    </div>\n  );\n}\n\nexport default App;"
+      }
+  },
+  "es6Introduction": {
+      "title": "What is ES6?",
+      "description": "ES6 stands for ECMAScript 6. ECMAScript was created to standardize JavaScript, and ES6 is the 6th version of ECMAScript, published in 2015. Also known as ECMAScript 2015, ES6 introduces new features and syntax enhancements to JavaScript.",
+      "whyLearnES6": {
+          "title": "Why Should I Learn ES6?",
+          "features": [
+              "Arrow Functions",
+              "Variables (let, const, var)",
+              "Array Methods like .map()",
+              "Destructuring",
+              "Modules",
+              "Ternary Operator",
+              "Spread Operator"
+          ]
+      }
+  },
+  "reactEs6Features": {
+      "title": "React ES6 Features",
+      "features": {
+          "arrowFunctions": {
+              "title": "React ES6 Arrow Functions",
+              "description": "Arrow functions allow for shorter function syntax and lexical scoping of `this`.",
+              "examples": {
+                  "before": "hello = function() {\n  return 'Hello World!';\n}",
+                  "after": "hello = () => {\n  return 'Hello World!';\n}",
+                  "withParameters": "hello = (val) => 'Hello ' + val;"
+              }
+          },
+          "variables": {
+              "title": "React ES6 Variables",
+              "description": "ES6 introduces new ways of defining variables using `let` and `const`, which provide block-scoped variables.",
+              "examples": {
+                  "varExample": "var x = 5.6;",
+                  "letExample": "let x = 5.6;"
+              }
+          },
+          "arrayMethods": {
+              "title": "React ES6 Array Methods",
+              "description": "ES6 array methods like `.map()` provide concise ways to work with arrays.",
+              "example": "const myArray = ['apple', 'banana', 'orange'];\n\nconst myList = myArray.map((item) => <p>{item}</p>)"
+          },
+          "destructuring": {
+              "title": "React ES6 Destructuring",
+              "description": "Destructuring allows for extracting values from arrays or objects and assigning them to variables.",
+              "examples": {
+                  "arrayDestructuring": "const vehicles = ['mustang', 'f-150', 'expedition'];\nconst [car, truck, suv] = vehicles;",
+                  "objectDestructuring": "const vehicleOne = {\n  brand: 'Ford',\n  model: 'Mustang',\n  type: 'car',\n  year: 2021, \n  color: 'red'\n}\n\nconst { brand, model, type, year, color } = vehicleOne;"
+              }
+          },
+          "modules": {
+              "title": "React ES6 Modules",
+              "description": "ES6 modules allow for organizing code into separate files and importing/exporting functionality.",
+              "examples": {
+                  "exportNamed": "export const name = 'Jesse';\nexport const age = 40;"
+              }
+          }
+      }
+  },
+  "defaultExports": {
+      "title": "React ES6 Default Exports",
+      "description": "Default exports allow you to export a single module/function from a file. There can only be one default export per file.",
+      "example": "const message = () => {\n  const name = 'Jesse';\n  const age = 40;\n  return name + ' is ' + age + ' years old.';\n};\n\nexport default message;"
+  },
+  "importingModules": {
+      "title": "React ES6 Import",
+      "description": "Importing modules into a file can be done using either named exports or default exports.",
+      "examples": {
+          "importNamedExports": "import { name, age } from './person.js';",
+          "importDefaultExport": "import message from './message.js';"
+      }
+  },
+  "jsxIntroduction": {
+      "title": "What is JSX?",
+      "description": "JSX (JavaScript XML) is a syntax extension for JavaScript, often used with React to describe what the UI should look like. It allows developers to write HTML-like code directly within JavaScript.",
+      "codingJSX": {
+          "title": "Coding JSX",
+          "description": "JSX makes it easier to write and add HTML in React by allowing developers to write HTML elements in JavaScript.",
+          "examples": {
+              "jsxExample": "const myElement = <h1>I Love JSX!</h1>;",
+              "withoutJSXExample": "const myElement = React.createElement('h1', {}, 'I do not use JSX!');"
+          }
+      },
+      "expressionsInJSX": {
+          "title": "Expressions in JSX",
+          "description": "JSX allows for embedding expressions within curly braces {}.",
+          "example": "const myElement = <h1>React is {5 + 5} times better with JSX</h1>;"
+      },
+      "conditionsInJSX": {
+          "title": "Conditions - if statements",
+          "description": "Conditional rendering in JSX can be achieved using if statements outside of JSX or ternary expressions within JSX.",
+          "examples": {
+              "ifStatementsOutsideJSX": "const x = 5;\nlet text = 'Goodbye';\nif (x < 10) {\n  text = 'Hello';\n}\n\nconst myElement = <h1>{text}</h1>;",
+              "ternaryExpressionsInsideJSX": "const x = 5;\nconst myElement = <h1>{(x) < 10 ? 'Hello' : 'Goodbye'}</h1>;"
+          }
+      }
+  },
+  "creatingComponents": {
+      "title": "Create your Own React Component",
+      "description": "Creating React components involves defining functions or classes that return JSX elements. These components can then be reused throughout your application.",
+      "steps": [
+          {
+              "step": 1,
+              "description": "Define the Component:",
+              "code": "function Welcome() {\n  return <h1>Hello, World!</h1>;\n}"
+          },
+          {
+              "step": 2,
+              "description": "Add Content:",
+              "code": "function Welcome() {\n  return <h1>Hello, World!</h1>;\n}"
+          },
+          {
+              "step": 3,
+              "description": "Export the Component (Optional):",
+              "code": "//JavaScript\n\nexport default Welcome;"
+          },
+          {
+              "step": 4,
+              "description": "Render the Component (in another file):",
+              "code": "//JavaScript\n\nimport Welcome from './Welcome'; // './' indicates a file in the same directory\n\nfunction App() {\n  return (\n    <div>\n      <Welcome />\n    </div>\n  );\n}\n\nexport default App;"
+          },
+          {
+              "step": 5,
+              "description": "Run the Application:",
+              "code": "// JavaScript\n// Go to your project folder and write npm run dev in the terminal to start the React app\n// Start the development server and navigate to your app in the browser to see the rendered component."
+          }
+      ]
+  },
+  "passingProps": {
+      "title": "Props",
+      "description": "Props are used to pass data from one component to another in React. They are like function arguments for components.",
+      "example": {
+          "componentDefinition": "//JavaScript\n\nimport React from 'react';\n\nfunction Welcome(props) {\n  return <h1>Hello, {props.name}!</h1>;\n}\n\nexport default Welcome;",
+          "usageInAppComponent": "//JavaScript\n\nimport React from 'react';\nimport Welcome from './Welcome';\n\nfunction App() {\n  const name = 'Alice';\n\n  return (\n    <div>\n      <Welcome name={name} />\n    </div>\n  );\n}\n\nexport default App;"
+      }
+  },
+  "passingEvents": {
+      "title": "Passing events",
+      "description": "React allows passing events to components using event handlers such as onClick, onChange, etc.",
+      "example": {
+          "componentDefinition": "//JavaScript\n\nimport React from 'react';\n\nfunction Welcome(props) {\n  const handleClick = () => {\n    alert('Button clicked!');\n  }\n\n  return (\n    <div>\n      <h1>Hello, {props.name}!</h1>\n      <button onClick={handleClick}>Click me</button>\n    </div>\n  );\n}\n\nexport default Welcome;"
+      }
+  },
+  "reactConditionalRendering": {
+      "title": "React Conditional Rendering",
+      "description": "Conditional rendering in React allows you to conditionally display components based on certain conditions. This can be achieved using if statements or ternary operators.",
+      "ifStatementExample": {
+          "description": "Example using if statements to conditionally render components based on a condition.",
+          "components": {
+              "MissedGoal": {
+                  "functionDefinition": "function MissedGoal() {\n  return <h1>MISSED!</h1>;\n}"
+              },
+              "MadeGoal": {
+                  "functionDefinition": "function MadeGoal() {\n  return <h1>Goal!</h1>;\n}"
+              }
+          },
+          "goalComponentExample": "function Goal(props) {\n  const isGoal = props.isGoal;\n  if (isGoal) {\n    return <MadeGoal/>;\n  }\n  return <MissedGoal/>;\n}",
+          "renderingExamples": {
+              "renderGoalMissed": "<Goal isGoal={false} />",
+              "renderGoalMade": "<Goal isGoal={true} />"
+          }
+      },
+      "reactLists": {
+          "title": "React Lists",
+          "description": "In React, you can render lists using the map() method of JavaScript arrays. This allows you to dynamically generate components based on the items in an array.",
+          "basicExample": {
+              "description": "Example rendering a list of cars using the map() method.",
+              "components": {
+                  "Car": {
+                      "functionDefinition": "function Car(props) {\n  return <li>I am a { props.brand }</li>;\n}"
+                  }
+              },
+              "garageComponentExample": "function Garage() {\n  const cars = ['Ford', 'BMW', 'Audi'];\n  return (\n    <>\n      <h1>Who lives in my garage?</h1>\n      <ul>\n        {cars.map((car) => <Car brand={car} />)}\n      </ul>\n    </>\n  );\n}",
+              "renderingExample": "<Garage />"
+          },
+          "refactorWithKeys": {
+              "title": "Refactor with Keys",
+              "description": "When rendering lists in React, it's important to include unique keys for each item to help React efficiently update the DOM. This is especially important when reordering, adding, or removing items from the list.",
+              "example": {
+                  "description": "Example rendering a list of cars with keys.",
+                  "garageComponentExample": "function Garage() {\n  const cars = [\n    {id: 1, brand: 'Ford'},\n    {id: 2, brand: 'BMW'},\n    {id: 3, brand: 'Audi'}\n  ];\n  return (\n    <>\n      <h1>Who lives in my garage?</h1>\n      <ul>\n        {cars.map((car) => <Car key={car.id} brand={car.brand} />)}\n      </ul>\n    </>\n  );\n}"
+              }
+          }
+      }
+  },
+  "addingFormsInReact": {
+      "title": "Adding Forms in React",
+      "description": "Forms in React can be added like any other element, but handling form data requires additional logic to prevent default browser behavior and to manage the form state.",
+      "basicFormExample": {
+          "description": "Example of adding a basic form to a React component.",
+          "componentDefinition": "function MyForm() {\n  return (\n    <form>\n      <label>Enter your name:\n        <input type=\"text\" />\n      </label>\n    </form>\n  )\n}",
+          "renderingExample": "<MyForm />"
+      },
+      "handlingForms": {
+          "title": "Handling Forms",
+          "description": "Handling forms in React involves managing form data and preventing default browser behavior using event handlers like onChange and onSubmit.",
+          "useStateExample": {
+              "description": "Example using the useState hook to manage form data.",
+              "componentDefinition": "function MyForm() {\n  const [name, setName] = useState(\"\");\n\n  return (\n    <form>\n      <label>Enter your name:\n        <input\n          type=\"text\" \n          value={name}\n          onChange={(e) => setName(e.target.value)}\n        />\n      </label>\n    </form>\n  )\n}"
+          },
+          "submitHandlerExample": {
+              "description": "Example adding a submit handler to the form to handle form submission.",
+              "componentDefinition": "function MyForm() {\n  const [name, setName] = useState(\"\");\n\n  const handleSubmit = (event) => {\n    event.preventDefault();\n    alert(`The name you entered was: ${name}`)\n  }\n\n  return (\n    <form onSubmit={handleSubmit}>\n      <label>Enter your name:\n        <input \n          type=\"text\" \n          value={name}\n          onChange={(e) => setName(e.target.value)}\n        />\n      </label>\n      <input type=\"submit\" />\n    </form>\n  )\n}"
+          },
+          "multipleInputFieldsExample": {
+              "description": "Example handling multiple input fields in a form using a single state object.",
+              "componentDefinition": "function MyForm() {\n  const [inputs, setInputs] = useState({});\n\n  const handleChange = (event) => {\n    const name = event.target.name;\n    const value = event.target.value;\n    setInputs(values => ({...values, [name]: value}))\n  }\n\n  const handleSubmit = (event) => {\n    event.preventDefault();\n    alert(inputs);\n  }\n\n  return (\n    <form onSubmit={handleSubmit}>\n      <label>Enter your name:\n      <input \n        type=\"text\" \n        name=\"username\" \n        value={inputs.username || \"\"} \n        onChange={handleChange}\n      />\n      </label>\n      <label>Enter your age:\n        <input \n          type=\"number\" \n          name=\"age\" \n          value={inputs.age || \"\"} \n          onChange={handleChange}\n        />\n        </label>\n        <input type=\"submit\" />\n    </form>\n  )\n}"
+          }
+      },
+      "textareaAndSelect": {
+          "title": "Textarea and Select",
+          "description": "Textarea and select elements in React are slightly different from their HTML counterparts, especially in how their values are handled.",
+          "textareaExample": {
+              "description": "Example of using a textarea element in React.",
+              "componentDefinition": "<textarea>\n  Content of the textarea.\n</textarea>"
+          },
+          "selectExample": {
+              "description": "Example of using a select element in React.",
+              "componentDefinition": "function MyForm() {\n  const [myCar, setMyCar] = useState(\"Volvo\");\n\n  const handleChange = (event) => {\n    setMyCar(event.target.value)\n  }\n\n  return (\n    <form>\n      <select value={myCar} onChange={handleChange}>\n        <option value=\"Ford\">Ford</option>\n        <option value=\"Volvo\">Volvo</option>\n        <option value=\"Fiat\">Fiat</option>\n      </select>\n    </form>\n  )\n}"
+          }
+      }
+  },
+  "reactRouter": {
+      "title": "React Router",
+      "description": "React Router is a library for adding routing to React applications, allowing navigation between different components based on the URL.",
+      "installation": {
+          "title": "Add React Router",
+          "description": "To add React Router to your application, install the react-router-dom package using npm or yarn."
+      },
+      "folderStructure": {
+          "title": "Folder Structure",
+          "description": "Typical folder structure for a React application with multiple page routes."
+      },
+      "basicUsage": {
+          "title": "Basic Usage",
+          "description": "Example usage of React Router in the index.js file to define routes for different components based on URL paths."
+      }
+  },
+  "useStateWithPropsAndEvents": {
+      "title": "useState with Props and Events",
+      "description": "Integrating React's useState hook with props and events allows you to manage component state dynamically based on user interactions and external data.",
+      "welcomeComponentUpdate": {
+          "description": "Updated Welcome component to include state management using useState hook and event handling.",
+          "componentDefinition": "import React, { useState } from 'react';\n\nfunction Welcome(props) {\n  const [count, setCount] = useState(0);\n\n  const handleClick = () => {\n    setCount(count + 1);\n  }\n\n  return (\n    <div>\n      <h1>Hello, {props.name}!</h1>\n      <p>You clicked {count} times</p>\n      <button onClick={handleClick}>Click me</button>\n    </div>\n  );\n}\n\nexport default Welcome;"
+      }
+  },
+  "useEffectHook": {
+      "title": "React useEffect Hook",
+      "description": "The useEffect hook in React allows you to perform side effects in functional components, such as data fetching, subscriptions, or timers. It runs after every render and can optionally depend on component state or props.",
+      "welcomeComponentUpdate": {
+          "description": "Updated Welcome component to include the useEffect hook for fetching data from an API and managing component state based on the fetched data.",
+          "componentDefinition": "import React, { useState, useEffect } from 'react';\n\nfunction Welcome(props) {\n  const [count, setCount] = useState(0);\n  const [fetchData, setFetchData] = useState(null);\n\n  useEffect(() => {\n    const fetchData = async () => {\n      const response = await fetch('https://api.example.com/data');\n      const data = await response.json();\n      setFetchData(data);\n    };\n\n    fetchData();\n  }, []);\n\n  const handleClick = () => {\n    setCount(count + 1);\n  }\n\n  return (\n    <div>\n      <h1>Hello, {props.name}!</h1>\n      {fetchData ? (\n        <p>Fetched Data: {fetchData.message}</p>\n      ) : (\n        <p>Loading data...</p>\n      )}\n      <p>You clicked {count} times</p>\n      <button onClick={handleClick}>Click me</button>\n    </div>\n  );\n}\n\nexport default Welcome;"
+      }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  { "vueJs":{
+    "vueIntroduction": {
+      "title": "Introduction to Vue.js",
+      "description": "Vue is a front-end JavaScript framework written in JavaScript. It is known for being lightweight and easy to start with, compared to other similar frameworks like React and Angular.",
+      "scriptTag": {
+        "title": "How to Add Vue to Your Web Page",
+        "code": "<script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>"
+      }
+    },
+    "whyLearnVue": {
+      "title": "Why Learn Vue?",
+      "points": [
+        "It is simple and easy to use.",
+        "It can handle both simple and complex projects.",
+        "It enjoys growing popularity and strong community support.",
+        "Unlike plain JavaScript, Vue abstracts the complexities of how HTML and JavaScript connect, focusing instead on the connection itself.",
+        "Vue enables efficient development with features like template-based syntax, two-way data binding, and centralized state management."
+      ]
+    },
+    "firstVuePage": {
+      "title": "My First Vue Page",
+      "htmlContent": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n  <title>My first Vue page</title>\n</head>\n<body>\n\n  <div id='app'>\n    {{ message }}\n  </div>\n\n  <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>\n\n  <script>\n    const app = Vue.createApp({\n      data() {\n        return {\n          message: \"Hello World!\"\n        }\n      }\n    })\n   app.mount('#app')\n  </script>\n</body>\n</html>"
+    },
+    "creatingAppWithVite": {
+      "title": "Creating Your App with Vite",
+      "description": "Quick Vue3 development environment setup using Vite.",
+      "commands": [
+        "npm init vite-app <project-name>",
+        "cd <project-name>",
+        "npm install",
+        "npm run dev"
+      ]
+    },
+    "templateSyntax": {
+      "title": "Template Syntax",
+      "textInterpolation": {
+        "description": "Text Interpolation Options",
+        "examples": [
+          "<span> {{ msg }} </span>",
+          "<span v-text='msg'></span>"
+        ]
+      },
+      "settingInnerHTML": {
+        "description": "Setting Inner HTML",
+        "code": "<span v-html='rawHTML'></span>"
+      },
+      "jsExpressions": {
+        "title": "Using JavaScript Expressions",
+        "validExample": "<span> {{ msg.reverse() }} </span>",
+        "invalidExample": "<span> {{ let msg = 'hi' }} </span>"
+      }
+    },
+    "directives": {
+      "title": "Vue Directives",
+      "description": "Directives are special tokens in the markup that tell the library to do something to a DOM element.",
+      "list": [
+        {"name": "v-if", "usage": "Puts element in DOM if condition is true."},
+        {"name": "v-else-if", "usage": "Used for else-if condition."},
+        {"name": "v-else", "usage": "Used for else condition."},
+        {"name": "v-show", "usage": "Toggles display CSS property based on the truthiness of the expression."},
+        {"name": "v-text", "usage": "Sets the inner text of an element."},
+        {"name": "v-html", "usage": "Sets the inner HTML of an element."},
+        {"name": "v-for", "usage": "Renders a list by looping over items."},
+        {"name": "v-on or @", "usage": "Attaches an event listener."},
+        {"name": "v-bind or :", "usage": "Dynamically binds one or more attributes, or a component prop to an expression."},
+        {"name": "v-model", "usage": "Creates a two-way binding on an input or a component."},
+        {"name": "v-once", "usage": "Renders plain HTML elements only once, and they do not update with reactive data changes."}
+      ]
+    },
+    "conditionalRendering": {
+      "title": "Conditional Rendering",
+      "examples": [
+        {"expression": "v-if='date == today'", "description": "Renders the element if date equals today."},
+        {"expression": "v-else-if='!done'", "description": "Renders the element if the previous v-if or v-else-if was false and this condition is true."},
+        {"expression": "v-else", "description": "Renders the element if all preceding conditions are false."}
+      ]
+    },
+    "eventHandling": {
+      "title": "Handling Events",
+      "description": "Vue.js provides v-on directive to listen to DOM events and execute some JavaScript when they’re triggered.",
+      "examples": [
+        {"event": "v-on:click='count'", "description": "Calls the 'count' method when the element is clicked."},
+        {"modifiers": ".stop, .prevent, .once, .self", "description": "Event modifiers can be used to modify standard JavaScript event behaviors."}
+      ]
+    },
+    "listRendering": {
+      "title": "List Rendering",
+      "examples": [
+        {"usage": "v-for='item in items'", "description": "Renders a list by repeating the element for each item in an array."},
+        {"usage": "v-for='(item, index) in items'", "description": "Renders a list and also provides access to the index of the current item in the loop."}
+      ]
+    },
+    "dataBinding": {
+      "title": "Binding Data",
+      "examples": [
+        {"binding": "v-bind:id='objectID'", "description": "Binds the id attribute to the value of objectID."},
+        {"binding": "v-model='email'", "description": "Creates a two-way binding on an input field so that it automatically updates the data property when the user types."},
+        {"binding": "v-bind:class='{ error: hasError }'", "description": "Conditionally applies the 'error' class based on the truthiness of 'hasError'."}
+      ]
+    },
+    "inputModifiers": {
+      "title": "Input Modifiers",
+      "description": "Modifiers that can be used on <input> elements to alter their default behavior.",
+      "modifiers": [
+        { "name": ".lazy", "usage": "Updates on change event instead of on input." },
+        { "name": ".trim", "usage": "Removes whitespace from the input." }
+      ]
+    },
+    "bindingClassStyle": {
+      "title": "Binding Class and Style",
+      "examples": [
+        { "binding": "<input :class='{error: hasError}' />", "description": "Binds the 'error' class based on the truthiness of 'hasError'." },
+        { "binding": "<input :style='{margin: space + \"px\"}' />", "description": "Dynamically binds the 'margin' style to 'space' in pixels." }
+      ]
+    },
+    "vueLifecycleHooks": {
+      "title": "Vue.js Lifecycle Hooks",
+      "description": "Important lifecycle hooks in Vue.js for managing component behavior through different stages.",
+      "hooks": [
+        { "name": "onBeforeMount", "description": "Called right before the mounting begins: the render function is about to be called for the first time." },
+        { "name": "onMounted", "description": "Called after the instance has been mounted, where element, passed to app.mount, is replaced by the newly created vm.$el." },
+        { "name": "onBeforeUpdate", "description": "Called when data changes, before the DOM is patched." },
+        { "name": "onUpdated", "description": "Called after data changes on your component and the DOM re-renders." },
+        { "name": "onBeforeUnmount", "description": "Called right before a Vue instance is unmounted." },
+        { "name": "onUnmounted", "description": "Called after a Vue instance has been unmounted." }
+      ],
+      "example": "import { onMounted } from 'vue'; setup() { onMounted(() => { console.log('component mounted!') }); }"
+    },
+    "watchEffectFunction": {
+      "title": "watchEffect Function",
+      "description": "Automatically tracks reactive dependencies used during the function execution and re-runs if any dependencies change.",
+      "usage": "const site = ref('learnvue.co'); watchEffect(() => { console.log(site.value); });"
+    },
+    "templateRefs": {
+      "title": "Template Refs",
+      "description": "References to DOM elements within Vue templates.",
+      "usage": "<div ref='example'>Example Div</div>",
+      "script": "setup() { const example = ref(null); onMounted(() => { console.log(example.value); }); return { example }; }"
+    },
+    "topVueLibraries": {
+      "title": "Top Vue Libraries",
+      "libraries": [
+        { "name": "vue-cli", "description": "Provides a full system for rapid Vue development." },
+        { "name": "vue-router", "description": "The official router for Vue.js." },
+        { "name": "vuex", "description": "State management library for Vue.js." }
+      ]
+    }
+
+  }}

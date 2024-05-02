@@ -1,0 +1,140 @@
+{
+    "reactAppWithVite": {
+        "title": "React App with Vite",
+        "description": "Vite is a modern build tool for frontend development.",
+        "installation": [
+            "Create Vite project: npm create vite@latest my-react-project",
+            "Install dependencies: cd my-react-project && npm install"
+        ],
+        "usage": "Run development server: npm run dev"
+    },
+    "whatIsReact": {
+        "title": "What is React?",
+        "description": "React is a JavaScript library for building UI components, developed by Facebook."
+    },
+    "howReactWorks": {
+        "title": "How React Works?",
+        "description": "React creates a virtual DOM in memory, allowing efficient manipulation before updating the browser's DOM."
+    },
+    "reactHistory": {
+        "title": "React.js History",
+        "description": "React.js was first released in July 2013 and is currently in version 18.0.0 (April 2022). It was initially used for Facebook's Newsfeed feature."
+    },
+    "reactAppCreatedWithVite": {
+        "title": "React App created using Vite",
+        "code": "Import necessary modules and components, configure JSX syntax, and utilize Vite's fast bundling."
+    },
+    "reactComponent": {
+        "title": "React Component",
+        "description": "A basic structure of a React component using functional components."
+    },
+    "es6Introduction": {
+        "title": "What is ES6?",
+        "description": "ES6 (ECMAScript 6) is the 6th version of ECMAScript, introducing new features and syntax enhancements to JavaScript.",
+        "whyLearnES6": {
+            "title": "Why Learn ES6?",
+            "features": [
+                "Arrow Functions",
+                "Block-scoped Variables (let, const)",
+                "Array Methods like .map()",
+                "Destructuring",
+                "Modules",
+                "Ternary Operator",
+                "Spread Operator"
+            ]
+        }
+    },
+    "reactEs6Features": {
+        "title": "React ES6 Features",
+        "features": [
+            {
+                "name": "Arrow Functions",
+                "description": "Shorter function syntax with lexical scoping of 'this'.",
+                "example": "hello = (val) => 'Hello ' + val;"
+            },
+            {
+                "name": "Variables",
+                "description": "Defines variables with block scoping using 'let' and 'const'.",
+                "example": "let x = 5.6 var x = 5.6;"
+            },
+            {
+                "name": "Array Methods",
+                "description": "Provides concise ways to work with arrays using methods like .map().",
+                "example": "const myArray = ['apple', 'banana', 'orange'];\nconst myList = myArray.map((item) => <p>{item}</p>)"
+            },
+            {
+                "name": "Destructuring",
+                "description": "Extracts values from arrays or objects and assigns them to variables.",
+                "example": "const vehicleOne = {\n  brand: 'Ford',\n  model: 'Mustang',\n  type: 'car',\n  year: 2021,\n  color: 'red'\n};\nconst { brand, model, type, year, color } = vehicleOne;"
+            },
+            {
+                "name": "Modules",
+                "description": "Organizes code into separate files and imports/export functionality.",
+                "example": "export const name = 'Jesse';\nexport const age = 40;"
+            }
+        ]
+    },
+    "defaultExports": {
+        "title": "React ES6 Default Exports",
+        "description": "Allows exporting a single module/function from a file using default export."
+    },
+    "importingModules": {
+        "title": "React ES6 Import",
+        "description": "Imports modules into a file using named exports or default exports.",
+        "examples": {
+            "importNamedExports": "import { name, age } from './person.js';",
+            "importDefaultExport": "import message from './message.js';"
+        }
+    },
+    "jsxIntroduction": {
+        "title": "What is JSX?",
+        "description": "JSX (JavaScript XML) is a syntax extension for writing HTML-like code within JavaScript.",
+        "codingJSX": {
+            "title": "Coding JSX",
+            "description": "Easier way to write HTML elements in React using JSX syntax.",
+            "examples": {
+                "jsxExample": "const myElement = <h1>I Love JSX!</h1>;",
+                "withoutJSXExample": "const myElement = React.createElement('h1', {}, 'I do not use JSX!');"
+            }
+        },
+        "expressionsInJSX": {
+            "title": "Expressions in JSX",
+            "description": "Allows embedding expressions within curly braces {} in JSX.",
+            "example": "const myElement = <h1>React is {5 + 5} times better with JSX</h1>;"
+        },
+        "conditionsInJSX": {
+            "title": "Conditions - if statements",
+            "description": "Conditional rendering in JSX can be done using if statements or ternary expressions.",
+            "examples": {
+                "ifStatementsOutsideJSX": "const x = 5;\nlet text = 'Goodbye';\nif (x < 10) {\n  text = 'Hello';\n}\nconst myElement = <h1>{text}</h1>;",
+                "ternaryExpressionsInsideJSX": "const x = 5;\nconst myElement = <h1>{(x) < 10 ? 'Hello' : 'Goodbye'}</h1>;"
+            }
+        }
+    },
+    "creatingComponents": {
+        "title": "Create your Own React Component",
+        "description": "Define, add content, export, and render your own React component.",
+        "steps": [
+            {
+                "description": "Define the Component",
+                "code": "function Welcome() {\n  return <h1>Hello, World!</h1>;\n}"
+            },
+            {
+                "description": "Add Content",
+                "code": "function Welcome() {\n  return <h1>Hello, World!</h1>;\n}"
+            },
+            {
+                "description": "Export the Component (Optional)",
+                "code": "// JavaScript\nexport default Welcome;"
+            },
+            {
+                "description": "Render the Component",
+                "code": "// JavaScript\nimport Welcome from './Welcome';\nfunction App() {\n  return (\n    <div>\n      <Welcome />\n    </div>\n  );\n}\nexport default App;"
+            },
+            {
+                "description": "Run the Application",
+                "code": "// JavaScript\n// Start the development server and navigate to your app in the browser to see the rendered component."
+            }
+        ]
+    }
+}

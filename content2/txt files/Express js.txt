@@ -1,0 +1,137 @@
+
+What is Express js?
+
+Express.js is a fast, flexible and minimalist web framework for Node.js. It’s effectively a tool that simplifies building web applications and APIs using JavaScript on the server side. Express is an open-source that is developed and maintained by the Node.js foundation.
+
+
+
+
+why learn Express js?
+
+Express.js offers a robust set of features that enhance your productivity and streamline your web application. It makes it easier to organize your application’s functionality with middleware and routing. It adds helpful utilities to Node HTTP objects and facilitates the rendering of dynamic HTTP objects.
+
+
+
+
+express()
+
+Creates an Express application. The express() function is a top-level function exported by the express module.
+
+	const express = require('express')
+	const app = express()
+
+
+
+
+
+Application
+
+The app object conventionally denotes the Express application. Create it by calling the top-level express() function exported by the Express module:
+
+	const express = require('express')
+	const app = express()
+
+	app.get('/', (req, res) => {
+  	res.send('hello world')
+	})
+
+	app.listen(3000)
+
+
+The app object has methods for
+
+
+Routing HTTP requests; see for example, app.METHOD and app.param.
+Configuring middleware; see app.route.
+Rendering HTML views; see app.render.
+Registering a template engine; see app.engine.
+
+
+
+
+
+app.mountpath
+
+The app.mountpath property contains one or more path patterns on which a sub-app was mounted.
+
+A sub-app is an instance of express that may be used for handling the request to a route.
+
+	const express = require('express')
+
+	const app = express() // the main app
+	const admin = express() // the sub app
+
+	admin.get('/', (req, res) => {
+  	console.log(admin.mountpath) // /admin
+  	res.send('Admin Homepage')
+	})
+
+	app.use('/admin', admin) // mount the sub app
+
+
+
+app.router
+
+The application’s in-built instance of router. This is created lazily, on first access.
+
+	const express = require('express')
+	const app = express()
+	const router = app.router
+
+	router.get('/', (req, res) => {
+  	res.send('hello world')
+	})
+
+	app.listen(3000)
+
+
+You can add middleware and HTTP method routes to the router just like an application.
+
+
+
+
+
+
+Router Objects
+
+You can group routes together using routers which can be used for organization and to apply middleware to a specific group of routes.
+
+Creating a Router
+
+	// create the router object
+	const router = express.Router()
+
+	// register it with the application for routes with a certain prefix
+	app.use("/prefex", router)
+
+	Just like the application object you can register middlewares routes with the router
+	
+	// router specific middleware
+	router.use(middlewareFunction)
+
+	// registering routes
+	router.get("/endpoint", routerHandler) // url is /prefix/endpoint
+
+
+
+
+Connecting to Databases
+
+The following libraries can help you connect to different databases.
+
+mongoose for connecting to a mongo database mongoose blog
+sequalize ORM for SQL databases (postgres, mysql, etc.)
+objection ORM for SQL databases (postgres, mysql, etc.)
+waterline ORM for SQL databases (postgres, mysql, etc.)
+
+
+
+
+Making API Calls
+
+Keep in mind you can't use fetch natively in node, and jQuery is only a frontend library. But you have some options.
+
+node-fetch A library that replicates the browsers fetch function
+Axios A library for making API Calls
+GOT a library for making api calls
+needle another http client library

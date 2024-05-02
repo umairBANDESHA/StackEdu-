@@ -1,0 +1,298 @@
+Vue is a JavaScript Framework
+
+Vue is a front-end JavaScript framework written in JavaScript.
+
+Similar frameworks to Vue are React and Angular, but Vue is more lightweight and easier to start with.
+
+Vue is distributed as a JavaScript file, and can be added to a web page with a script tag:
+
+	<script
+  	src="https://unpkg.com/vue@3/dist/vue.global.js">
+	</script>
+
+
+
+
+
+
+Why Learn Vue?
+
+It is simple and easy to use.
+It is able to handle both simple and complex projects.
+Its growing popularity and open-source community support.
+In normal JavaScript we need to write HOW HTML and JavaScript is connected, but in Vue we simply need to make sure that there IS a connection and let Vue take care of the rest.
+It allows for a more efficient development process with a template-based syntax, two-way data binding, and a centralized state management.
+
+
+
+
+
+
+
+My first Vue page
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My first Vue page</title>
+</head>
+<body>
+
+  <div id="app">
+    {{ message }}
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          message: "Hello World!"
+        }
+      }
+    })
+
+   app.mount('#app')
+
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+CREATING YOUR APP WITH VITE
+
+ Quick Vue3 development environment
+
+ 	npm init vite-app <project-name>
+ 	cd <project-name>
+ 	npm install
+ 	npm run dev
+
+
+
+
+ TEMPLATE SYNTAX
+
+ Text Interpolation Options
+
+ 	<span> {{ msg }} </span>
+ 	<span v-text='msg'></span>
+
+
+
+
+
+
+ Setting Inner HTML
+
+ 	<span v-html='rawHTML'></span>
+
+
+
+
+
+
+
+ Can use JS Expressions; NOT JS Statements
+
+	✅<span> {{ msg.reverse() }} </span>
+ 
+	❌<span> {{ let msg = 'hi' }} </span>
+
+
+
+
+DIRECTIVES
+
+ v-if 		Puts el in DOM if true
+ v-else-if 	Like a usual conditional
+ v-else 	Like a usual conditional
+ v-show 	Toggles display CSS value
+ v-text 	Sets the inner text
+ v-html 	Sets the inner HTML
+ v-for 		Loop through an array/obj
+ v-on or @ 	Listens to DOM events
+ v-bind or : 	Reactive updates attribute
+ v-model 	Two way data binding
+ v-once 	Sets val once; Never update
+
+
+
+
+
+
+CONDITIONAL RENDERING
+
+ Add/Remove Element from DOM w/ Boolean
+
+ 	<div v-if='date == today'>...</div>
+ 	<div v-else-if='!done'>...</div>
+ 	<div v-else>...</div>
+
+
+
+
+
+
+
+
+HANDLING EVENTS
+
+ Capture and event and call a method
+
+ 	<div v-on:click='count'>Increase</div>
+ 	<!-- SHORTHAND -->
+ 	<div @click='count'>Increase</div>
+
+ Method is passed a Native DOM Cvent
+
+ 	const count = (event) => {
+ 	console.log(event.target)
+ 	}
+
+
+ Event modifiers (usage: v-on:click.stop)
+
+ .stop 		Stops event propagation
+ .once 		Can only trigger event once
+ .prevent	Calls evt.preventDefault
+ .self 		Don't send if target = child
+
+
+
+
+
+
+
+LIST RENDERING
+
+ Basic Loop Over Array
+
+ 	<li v-for='item in items' :key='item'>
+ 	{{ item }}
+ 	</li>
+
+ 	Loop and Track Index
+
+ 	<li v-for='(item, index) in items'>
+ 	{{ index }} : {{ item }}
+ 	</li>
+
+
+
+
+
+
+ BINDING DATA
+
+ Simple Binding
+ 	<div v-bind:id='objectID'>...</div>
+ 	<!-- SHORTHAND -->
+ 	<div :id='objectID'>...</div>
+
+
+ Two way binding with data and input
+
+ 	<input v-model='email' />
+
+
+ Input Modifiers
+
+ .lazy 		updates on change event
+ .trim 		removes extra whitespace
+
+ Use Objects to Bind Class/Styles
+
+	 <input :class='{error: hasError}' />
+ 	<input :style='{margin: space+"px"}' />
+
+
+
+
+
+
+ VUEJS LIFECYCLE HOOKS
+
+ *beforeCreate 			Use setup() instead
+ *created 			Use setup() instead
+ onBeforeMount 			Before mounting DOM
+ onMounted 			DOM can be accessed
+ onBeforeUpdate 		Reactive data changes
+ onUpdated 			DOM has been updated
+ onBeforeUnmount 		Component still complete
+ onUnmounted 			Teardown complete
+
+
+ EXAMPLE LIFECYCLE HOOK CODE
+
+ 	import { onMounted } from 'vue'
+ 	// ...
+ 	setup() {
+ 	onMounted(() => {
+ 	console.log('component mounted!')
+ 	}
+ 	}
+
+
+
+
+
+WATCHEFFECT()
+
+ Listens to reactive dependencies and runs a
+ method when one changes. Also runs on init.
+
+
+ 	setup() {
+ 	const site = ref('learnvue.co')
+ 	watchEffect(() => {
+ 	console.log(site.value)
+ 	})
+ 	return { site }
+ 	}
+
+
+
+
+
+
+
+
+
+
+TEMPLATE REFS
+
+ Give access to DOM elements.
+ // template
+ 	<div ref='example'> Example Div </div>
+ // script
+ 	setup() {
+ 	const example = ref('learnvue.co')
+ 	// wait for DOM to mount
+ 	onMounted(() => {
+ 	console.log(example.value)
+ 	})
+ 	return { example }
+	 }
+
+
+
+
+ TOP VUE LIBRARIES
+
+
+ vue-cli 	Command Line Interface
+ vue-router 	Handles Routing for SPAs
+ vuex State 	Management Librar

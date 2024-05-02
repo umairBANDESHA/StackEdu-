@@ -7,13 +7,13 @@ if(!isset($_SESSION['role'])){
 
 
 
-include('./includes/header.php');
 // Set error reporting
 error_reporting(E_ALL & ~E_WARNING);
 
 // Set display_errors
 ini_set('display_errors', 'Off');
 
+include('./includes/header.php');
 
 
 
