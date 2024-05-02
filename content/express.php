@@ -4,7 +4,7 @@
 session_start();
 
 if(!isset($_SESSION['role'])){
-    header('Location: main.php'); 
+    header('Location: /StackEdu-/main.php'); 
 }
 
 

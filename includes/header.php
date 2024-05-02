@@ -67,15 +67,15 @@ if (isset($_SESSION['role'])) {
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 text-white">
           <li>
-            <a href="./courses.php" class="dropdown-toggle nav-link px-2 link-body-emphasis text-white"
+            <a href="/courses.php" class="dropdown-toggle nav-link px-2 link-body-emphasis text-white"
               data-bs-toggle="dropdown">Courses</a>
             <ul class="dropdown-menu text-small">
-              <li><a class="dropdown-item" href="./../content/react.php">React.js</a></li>
-              <li><a class="dropdown-item" href="./../content/angular.php">Angular.js</a></li>
-              <li><a class="dropdown-item" href="./../content/vue.php">Vue.js</a></li>
-              <li><a class="dropdown-item" href="./../content/node.php">Node.js</a></li>
-              <li><a class="dropdown-item" href="./../content/express.php">Express.js</a></li>
-              <li><a class="dropdown-item" href="./../content/mongoDB.php">MongoDB</a></li>
+              <li><a class="dropdown-item" href="/StackEdu-/content/react.php">React.js</a></li>
+              <li><a class="dropdown-item" href="/StackEdu-/content/angular.php">Angular.js</a></li>
+              <li><a class="dropdown-item" href="/StackEdu-/content/vue.php">Vue.js</a></li>
+              <li><a class="dropdown-item" href="/StackEdu-/content/node.php">Node.js</a></li>
+              <li><a class="dropdown-item" href="/StackEdu-/content/express.php">Express.js</a></li>
+              <li><a class="dropdown-item" href="/StackEdu-/content/mongoDB.php">MongoDB</a></li>
              
               <!-- <li><hr class="dropdown-divider" /></li> -->
             </ul>

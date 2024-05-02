@@ -1,21 +1,17 @@
 <?php
-
 session_start();
 
-if(!isset($_SESSION['role'])){
-    header('Location: main.php'); 
-}
+// if(!isset($_SESSION['role'])){
+//     header('Location: /StackEdu-/main.php'); 
+// }
 
 
-// Set error reporting
-error_reporting(E_ALL & ~E_WARNING);
+// // Set error reporting
+// error_reporting(E_ALL & ~E_WARNING);
 
-// Set display_errors
-ini_set('display_errors', 'Off');
+// // Set display_errors
+// ini_set('display_errors', 'Off');
 include('./../includes/header.php');
-
-
-// Load JSON data into a PHP variable
 $data = file_get_contents('react.json');
 $json_data = json_decode($data, true);
 ?>
@@ -26,20 +22,15 @@ $json_data = json_decode($data, true);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Render JSON Data in PHP</title>
-    <style>
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 5px;
-        }
-    </style>
+    
+
 </head>
 <body>
 <header class="bg-primary py-4">
         <div class="container text-center text-white">
-            <h1 class="mb-0">REACT.JS</h1>
+            <h1 class="mb-0">React JS</h1>
         </div>
-    </header
+</header>
     <div id="data-container"></div>
     <script>
         // Function to render the JSON data on the PHP page
