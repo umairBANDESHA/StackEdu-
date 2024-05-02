@@ -31,7 +31,7 @@ $data = json_decode($jsonData, true);
 
 </head>
 <body>
-<header class="py-4">
+<header class="py-4 bg-success">
         <div class="container text-center text-black">
             <h1 class="mb-0">Vue.JS</h1>
         </div>
