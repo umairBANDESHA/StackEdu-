@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['role'])) {
-    header('Location: main.php');
-}
+// if (!isset($_SESSION['role'])) {
+//     header('Location: main.php');
+// }
 
 
 
@@ -39,8 +39,8 @@ ini_set('display_errors', 'Off');
                 <a href="#mean">
                     <button type="button" class="btn btn-outline-dark btn-lg mx- px-4" id="meanBtn">MEAN Stack</button>
                 </a>
-                <a href="mevn">
-                    <button type="button" class="btn btn-outline-dark btn-lg mx- px-4" id="mevn">MEVN Stack</button>
+                <a href="#mevn">
+                    <button type="button" class="btn btn-outline-dark btn-lg mx- px-4" id="mevnBtn">MEVN Stack</button>
                 </a>
             </div>
         </div>
@@ -65,7 +65,7 @@ ini_set('display_errors', 'Off');
 </div>
 
 <!-- MEVN stack -->
-<div id="mevn">
+<div class="mevn" id="mevn">
     <?php
     include('MEVN_STACK.xml');
     ?>
@@ -77,7 +77,3 @@ ini_set('display_errors', 'Off');
 include('./includes/footer.php');
 
 ?>
-<script>
-   
-
-</script>

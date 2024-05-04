@@ -18,7 +18,7 @@ include('./includes/header.php');
 
 <div class=" text-secondary px-4 py-5 text-center">
     <div class="py-5">
-        <h1 class="display-5 fw-bold ">Web Development Stacks</h1>
+        <h1 class="display-5 fw-bold ">Mern Stack</h1>
         <div class="col-lg-6 mx-auto">
             <p class="fs-5 mb-4">
                 The MERN stack, comprising MongoDB, Express.js, React.js, and Node.js, represents a powerful set of

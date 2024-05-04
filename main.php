@@ -94,21 +94,13 @@ $data_EJ = json_decode($json_data, true);
         </div>
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-            Responsive left-aligned hero with image
+          Unlock Your Potential in Tech
           </h1>
           <p class="lead">
-            Quickly design and customize responsive mobile-first sites with
-            Bootstrap, the world’s most popular front-end open source toolkit,
-            featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.
+          Embark on a journey through the intricacies of roadmap development and the dynamic world of tech stacks. Our comprehensive courses blend practical insights with theoretical knowledge, empowering you to navigate the digital landscape with confidence.
           </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-              Primary
-            </button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-              Default
-            </button>
+            
           </div>
         </div>
       </div>
@@ -125,7 +117,7 @@ $data_EJ = json_decode($json_data, true);
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="background-image: url('unsplash-photo-2.jpg')"
           >
-            <img src="./img/stack_1.jpg" alt="" width="100%" height="200" />
+            <img src="./img/Node-js.jpg" alt="" width="100%" height="200" />
             <div class="p-3">
               <h2 class="fw-normal">NodeJS</h2>
               <pre>
@@ -143,7 +135,7 @@ JavaScript runtime environment
             style="background-image: url('unsplash-photo-2.jpg')"
           >
           
-            <img src="./img/stack_1.jpg" alt="" width="100%" height="200" />
+            <img src="./img/react.jpeg" alt="" width="100%" height="200" />
             <div class="p-3">
               <h2 class="fw-normal">ReactJS</h2>
               <pre>
@@ -160,7 +152,7 @@ and flexible JavaScript library.
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="background-image: url('unsplash-photo-2.jpg')"
           >
-            <img src="./img/stack_1.jpg" alt="" width="100%" height="200" />
+            <img src="./img/expressJS.jpeg" alt="" width="100%" height="200" />
             <div class="p-3">
               <h2 class="fw-normal">ExpressJS</h2>
               <pre>

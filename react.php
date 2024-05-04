@@ -1,16 +1,16 @@
 <?php
 session_start();
 
-// if(!isset($_SESSION['role'])){
-//     header('Location: /StackEdu-/main.php'); 
-// }
+if(!isset($_SESSION['role'])){
+    header('Location: main.php'); 
+}
 
 
 // // Set error reporting
-// error_reporting(E_ALL & ~E_WARNING);
+error_reporting(E_ALL & ~E_WARNING);
 
 // // Set display_errors
-// ini_set('display_errors', 'Off');
+ini_set('display_errors', 'Off');
 include('./includes/header.php');
 $data = file_get_contents('./content/react.json');
 $json_data = json_decode($data, true);
