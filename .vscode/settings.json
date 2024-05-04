@@ -1,0 +1,53 @@
+{
+    "editor.fontFamily": "Fira-Code",
+    "workbench.iconTheme": "catppuccin-macchiato",
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "synthwave84.brightness": 1,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.editor.showTabs": "single",
+    "terminal.integrated.env.windows": {},
+    "editor.accessibilitySupport": "off",
+    "console-ninja.toolsToEnableSupportAutomaticallyFor": {
+        "live-server-extension": true,
+        "live-preview-extension": true
+    },
+    "workbench.editor.wrapTabs": true,
+    "npm.exclude": "",
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "json.schemas": [
+        
+    ],
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "emmet.preferences": {
+    
+    },
+    "workbench.colorCustomizations": {
+    "terminal.foreground": "#f8c382",
+    "terminalCursor.foreground":"#96e6f6"
+    },
+    "glassit.alpha": 195,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "console-ninja.featureSet": "Community",
+    "window.titleBarStyle": "custom",
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDelete": false,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.env.linux": {},
+    "workbench.settings.applyToAllProfiles": [
+
+        
+    ]
+    
+}
