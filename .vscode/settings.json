@@ -48,6 +48,9 @@
     "workbench.settings.applyToAllProfiles": [
 
         
-    ]
+    ],
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "editor.fontVariations": true,
     
 }
