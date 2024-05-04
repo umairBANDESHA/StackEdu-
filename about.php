@@ -1,28 +1,10 @@
- 
- 
-<?php
+ <?php
 include('./includes/header.php');
 
 session_start();
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Stack Edu</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <header class="bg-primary py-4">
-        <div class="container text-center text-white">
-            <h1 class="mb-0">About Stack Edu</h1>
-        </div>
-    </header>
-
-    <main class="container mt-4">
+<main class="container mt-4">
         <section>
             <h2>Our Mission</h2>
             <p>Our mission at Stack Edu is to revolutionize the way people learn by providing a dynamic and interactive online learning experience. We strive to empower individuals to unlock their full potential through accessible education, innovative technology, and a supportive community.</p>
@@ -58,9 +40,6 @@ session_start();
         </section>
     </main>
 
-    
-</body>
-</html>
 
 
 
