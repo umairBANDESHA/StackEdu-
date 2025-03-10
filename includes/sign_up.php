@@ -5,7 +5,7 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $phoneNbr = $_POST['phoneNmbr'];
 $address = $_POST['address'];
-$picture = $_POST['picture'];
+// $picture = $_POST['picture'];
 $password = $_POST['password'];
 
 
