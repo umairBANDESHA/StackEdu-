@@ -10,6 +10,19 @@ ini_set('display_errors', 'Off');
 session_start();
 
 
+// NODE JS
+$json_data_NJ = file_get_contents('./content/node.json');
+$data_NJ = json_decode($json_data, true);
+
+// REACT JS
+
+$json_data_RJ = json_decode($data, true);
+$data_RJ = file_get_contents('./content/react.json');
+
+// EXPRESS JS
+
+$json_data_EJ = file_get_contents('./content/express.json');
+$data_EJ = json_decode($json_data, true);
 
 ?>
 
@@ -81,21 +94,13 @@ session_start();
         </div>
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-            Responsive left-aligned hero with image
+          Unlock Your Potential in Tech
           </h1>
           <p class="lead">
-            Quickly design and customize responsive mobile-first sites with
-            Bootstrap, the world’s most popular front-end open source toolkit,
-            featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.
+          Embark on a journey through the intricacies of roadmap development and the dynamic world of tech stacks. Our comprehensive courses blend practical insights with theoretical knowledge, empowering you to navigate the digital landscape with confidence.
           </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-              Primary
-            </button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-              Default
-            </button>
+            
           </div>
         </div>
       </div>
@@ -103,49 +108,23 @@ session_start();
 
     <!-- Recomended-->
     <div class="container px-4 py-5" id="custom-cards">
-      <h2 class="pb-2 border-bottom">Recomended to you</h2>
+      <h2 class="pb-2 border-bottom">Recomended Technologies</h2>
       <div
-        class="card_container row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"
-      >
-        <!-- Side Buttons -->
-        <!-- <ul
-          class="controls"
-          id="sliderFirstControls"
-          aria-label="Carousel Navigation"
-          tabindex="0"
-        >
-          <li
-            class="prev"
-            aria-controls="tns1"
-            tabindex="-1"
-            data-controls="prev"
-          >
-            <i class="fa-solid fa-chevron-left"></i>
-          </li>
-          <li
-            class="next"
-            aria-controls="tns1"
-            tabindex="-1"
-            data-controls="next"
-          >
-            <i class="fe fe-chevron-right"></i>
-            <i class="fa-solid fa-chevron-right"></i>
-          </li>
-        </ul> -->
+        class="card_container row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
         <!-- card -->
         <div class="col">
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="background-image: url('unsplash-photo-2.jpg')"
           >
-            <img src="./img/stack_1.jpg" alt="" width="100%" height="200" />
+            <img src="./img/Node-js.jpg" alt="" width="100%" height="200" />
             <div class="p-3">
-              <h2 class="fw-normal">Heading</h2>
-              <p>
-                Some representative placeholder content for the three columns of
-                text below the carousel. This is the first column.
-              </p>
-              <p><a class="btn btn-secondary" href="#">View details »</a></p>
+              <h2 class="fw-normal">NodeJS</h2>
+              <pre>
+It is an open-source,cross-platform,
+JavaScript runtime environment
+              </pre>
+              <p><a class="btn btn-secondary" href="./node.php">View details »</a></p>
             </div>
           </div>
         </div>
@@ -155,30 +134,15 @@ session_start();
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="background-image: url('unsplash-photo-2.jpg')"
           >
-            <!-- <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="./img/stack_1.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>Pakistan</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>4d</small>
-              </li>
-            </ul>
-          </div> -->
-            <img src="./img/stack_1.jpg" alt="" width="100%" height="200" />
+          
+            <img src="./img/react.jpeg" alt="" width="100%" height="200" />
             <div class="p-3">
-              <h2 class="fw-normal">Heading</h2>
-              <p>
-                Some representative placeholder content for the three columns of
-                text below the carousel. This is the first column.
-              </p>
-              <p><a class="btn btn-secondary" href="#">View details »</a></p>
+              <h2 class="fw-normal">ReactJS</h2>
+              <pre>
+ReactJS is a declarative, efficient, 
+and flexible JavaScript library.
+              </pre>
+              <p><a class="btn btn-secondary" href="./react.php">View details »</a></p>
             </div>
           </div>
         </div>
@@ -188,57 +152,24 @@ session_start();
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="background-image: url('unsplash-photo-2.jpg')"
           >
-            <img src="./img/stack_1.jpg" alt="" width="100%" height="200" />
+            <img src="./img/expressJS.jpeg" alt="" width="100%" height="200" />
             <div class="p-3">
-              <h2 class="fw-normal">Heading</h2>
-              <p>
-                Some representative placeholder content for the three columns of
-                text below the carousel. This is the first column.
-              </p>
-              <p><a class="btn btn-secondary" href="#">View details »</a></p>
+              <h2 class="fw-normal">ExpressJS</h2>
+              <pre>
+ExpressJS is a minimal and flexible 
+Node.js web application framework
+              </pre>
+              <p><a class="btn btn-secondary" href="./express.php">View details »</a></p>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-2.jpg')"
-          >
-            <img src="./img/stack_1.jpg" alt="" width="100%" height="200" />
-            <div class="p-3">
-              <h2 class="fw-normal">Heading</h2>
-              <p>
-                Some representative placeholder content for the three columns of
-                text below the carousel. This is the first column.
-              </p>
-              <p><a class="btn btn-secondary" href="#">View details »</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-2.jpg')"
-          >
-            <img src="./img/stack_1.jpg" alt="" width="100%" height="200" />
-            <div class="p-3">
-              <h2 class="fw-normal">Heading</h2>
-              <p>
-                Some representative placeholder content for the three columns of
-                text below the carousel. This is the first column.
-              </p>
-              <p><a class="btn btn-secondary" href="#">View details »</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
     </div>
 
     <!-- Trending -->
     <div class="container px-4 py-5" id="custom-cards">
-      <h2 class="pb-2 border-bottom">Trending</h2>
+      <h2 class="pb-2 border-bottom">Trending Web-Devlopment Stack</h2>
       <div
         class="card_container row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"
       >
@@ -275,84 +206,17 @@ session_start();
           >
             <img src="./img/stack_1.jpg" alt="" width="100%" height="200" />
             <div class="p-3">
-              <h2 class="fw-normal">Heading</h2>
-              <p>
-                Some representative placeholder content for the three columns of
-                text below the carousel. This is the first column.
-              </p>
-              <p><a class="btn btn-secondary" href="#">View details »</a></p>
+              <h2 class="fw-normal">MERN</h2>
+              <pre>
+MERN stack is popular stack to build
+dynamic full-stack web apps.
+              </pre>
+              <p><a class="btn btn-secondary" href="./mernStack.php">View details »</a></p>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-2.jpg')"
-          >
-            <img src="./img/stack_1.jpg" alt="" width="100%" height="200" />
-            <div class="p-3">
-              <h2 class="fw-normal">Heading</h2>
-              <p>
-                Some representative placeholder content for the three columns of
-                text below the carousel. This is the first column.
-              </p>
-              <p><a class="btn btn-secondary" href="#">View details »</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-2.jpg')"
-          >
-            <img src="./img/stack_1.jpg" alt="" width="100%" height="200" />
-            <div class="p-3">
-              <h2 class="fw-normal">Heading</h2>
-              <p>
-                Some representative placeholder content for the three columns of
-                text below the carousel. This is the first column.
-              </p>
-              <p><a class="btn btn-secondary" href="#">View details »</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-2.jpg')"
-          >
-            <img src="./img/stack_1.jpg" alt="" width="100%" height="200" />
-            <div class="p-3">
-              <h2 class="fw-normal">Heading</h2>
-              <p>
-                Some representative placeholder content for the three columns of
-                text below the carousel. This is the first column.
-              </p>
-              <p><a class="btn btn-secondary" href="#">View details »</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-2.jpg')"
-          >
-            <img src="./img/stack_1.jpg" alt="" width="100%" height="200" />
-            <div class="p-3">
-              <h2 class="fw-normal">Heading</h2>
-              <p>
-                Some representative placeholder content for the three columns of
-                text below the carousel. This is the first column.
-              </p>
-              <p><a class="btn btn-secondary" href="#">View details »</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
+   </div>
     </div>
 
 

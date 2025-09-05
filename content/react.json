@@ -116,27 +116,22 @@
         "description": "Define, add content, export, and render your own React component.",
         "steps": [
             {
-                "step": 1,
                 "description": "Define the Component",
                 "code": "function Welcome() {\n  return <h1>Hello, World!</h1>;\n}"
             },
             {
-                "step": 2,
                 "description": "Add Content",
                 "code": "function Welcome() {\n  return <h1>Hello, World!</h1>;\n}"
             },
             {
-                "step": 3,
                 "description": "Export the Component (Optional)",
                 "code": "// JavaScript\nexport default Welcome;"
             },
             {
-                "step": 4,
                 "description": "Render the Component",
                 "code": "// JavaScript\nimport Welcome from './Welcome';\nfunction App() {\n  return (\n    <div>\n      <Welcome />\n    </div>\n  );\n}\nexport default App;"
             },
             {
-                "step": 5,
                 "description": "Run the Application",
                 "code": "// JavaScript\n// Start the development server and navigate to your app in the browser to see the rendered component."
             }

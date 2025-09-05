@@ -58,7 +58,7 @@ if (isset($_SESSION['role'])) {
 
 
   <!-- Header -->
-  <header class="mb-3 border-bottom">
+  <header class="border-bottom">
     <div class="container text-white">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="./main.php" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
@@ -67,18 +67,17 @@ if (isset($_SESSION['role'])) {
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 text-white">
           <li>
-            <a href="/courses.php" class="dropdown-toggle nav-link px-2 link-body-emphasis text-white"
-              data-bs-toggle="dropdown">Courses</a>
-            <ul class="dropdown-menu text-small">
-              <li><a class="dropdown-item" href="/StackEdu-/content/react.php">React.js</a></li>
-              <li><a class="dropdown-item" href="/StackEdu-/content/angular.php">Angular.js</a></li>
-              <li><a class="dropdown-item" href="/StackEdu-/content/vue.php">Vue.js</a></li>
-              <li><a class="dropdown-item" href="/StackEdu-/content/node.php">Node.js</a></li>
-              <li><a class="dropdown-item" href="/StackEdu-/content/express.php">Express.js</a></li>
-              <li><a class="dropdown-item" href="/StackEdu-/content/mongoDB.php">MongoDB</a></li>
-             
-              <!-- <li><hr class="dropdown-divider" /></li> -->
-            </ul>
+            <a href="./courses.php" class="nav-link px-2 link-body-emphasis text-white"
+         >Courses</a>
+            <!-- <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item" href="./react.php">React.js</a></li>
+              <li><a class="dropdown-item" href="./angular.php">Angular.js</a></li>
+              <li><a class="dropdown-item" href="./vue.php">Vue.js</a></li>
+              <li><a class="dropdown-item" href="./node.php">Node.js</a></li>
+              <li><a class="dropdown-item" href="./express.php">Express.js</a></li>
+              <li><a class="dropdown-item" href="./mongoDB.php">MongoDB</a></li>
+              <li><hr class="dropdown-divider" /></li>
+            </ul> -->
           </li>
 
           <li>

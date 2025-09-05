@@ -32,5 +32,5 @@ if($conn->connect_error){
             // echo $execval;
             $stmt->close();
             $conn->close();
-        }
+        
     ?>

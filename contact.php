@@ -3,7 +3,9 @@ session_start();
 
 if(!isset($_SESSION['role'])){
     header('Location: main.php'); 
+    // $_SESSION['role']
 }
+
 
 
 // Set error reporting
@@ -11,9 +13,8 @@ error_reporting(E_ALL & ~E_WARNING);
 
 // Set display_errors
 ini_set('display_errors', 'Off');
+
 include('./includes/header.php');
-
-
 
 
 
